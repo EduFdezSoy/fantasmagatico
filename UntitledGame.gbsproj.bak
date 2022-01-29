@@ -5350,7 +5350,7 @@
                             "id": "88f09737-f833-4fc7-92a7-672a39da4314",
                             "command": "EVENT_IF_FALSE",
                             "args": {
-                                "variable": "L0",
+                                "variable": "15",
                                 "__collapseElse": false,
                                 "__disableElse": true,
                                 "__collapse": false
@@ -5361,7 +5361,7 @@
                                         "id": "a1dc108a-db2e-49a9-8e94-47a30712eb3a",
                                         "command": "EVENT_SET_TRUE",
                                         "args": {
-                                            "variable": "L0",
+                                            "variable": "15",
                                             "__collapse": false
                                         }
                                     },
@@ -5431,7 +5431,7 @@
                             "id": "6d8e2dc7-1ecc-48a2-aef0-1eed2e39ca67",
                             "command": "EVENT_IF_FALSE",
                             "args": {
-                                "variable": "L0",
+                                "variable": "15",
                                 "__collapseElse": false,
                                 "__disableElse": true,
                                 "__collapse": false
@@ -5442,7 +5442,7 @@
                                         "id": "b9371384-68c9-410b-9f45-4294a6f7f60d",
                                         "command": "EVENT_SET_TRUE",
                                         "args": {
-                                            "variable": "L0",
+                                            "variable": "15",
                                             "__collapse": false
                                         }
                                     },
@@ -55908,7 +55908,7 @@
         },
         {
             "id": "15",
-            "name": "Seen Duck"
+            "name": "virtudes saludo"
         },
         {
             "id": "16",
@@ -55952,7 +55952,7 @@
         },
         {
             "id": "3f86dd3f-8ceb-455c-8dd2-312e2965beda__L0",
-            "name": "virtudes saludo"
+            "name": "local 0"
         },
         {
             "id": "1b7f9ffd-2bbb-470b-9189-c2ac435d2a55__L0",
@@ -55976,7 +55976,7 @@
         },
         {
             "id": "8d0ef7a0-559e-4ba9-9cfa-4e515e182ec4__L0",
-            "name": "virtudes saludo"
+            "name": "local 0"
         },
         {
             "id": "4e65e4bc-5c88-4344-8eee-e545ca15e396__L0",
