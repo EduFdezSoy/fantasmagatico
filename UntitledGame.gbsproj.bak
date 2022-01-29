@@ -21105,7 +21105,23 @@
                     "collisionGroup": "",
                     "script": [],
                     "startScript": [],
-                    "updateScript": [],
+                    "updateScript": [
+                        {
+                            "command": "EVENT_ACTOR_SET_POSITION",
+                            "args": {
+                                "actorId": "$self$",
+                                "x": {
+                                    "type": "number",
+                                    "value": 0
+                                },
+                                "y": {
+                                    "type": "number",
+                                    "value": 0
+                                }
+                            },
+                            "id": "182f0270-fff2-4422-8c25-eba23a96496d"
+                        }
+                    ],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
@@ -53829,8 +53845,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 93,
-        "worldScrollY": 564,
+        "worldScrollX": 194,
+        "worldScrollY": 788,
         "zoom": 184,
         "customColorsEnabled": true,
         "sgbEnabled": true,
@@ -53859,9 +53875,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            30,
-            179,
-            728
+            204,
+            178,
+            555
         ],
         "showNavigator": true,
         "defaultFontId": "0c7c1705-dab6-476e-a5ce-17de23b3d591",
