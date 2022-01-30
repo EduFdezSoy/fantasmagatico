@@ -1401,6 +1401,20 @@
                     "startScript": [],
                     "updateScript": [
                         {
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "L1",
+                                "operation": "add",
+                                "other": "val",
+                                "vectorY": "L0",
+                                "value": 2,
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": false
+                            },
+                            "id": "8371648e-12b4-4796-bef3-8ea496545969"
+                        },
+                        {
                             "command": "EVENT_IF_FLAGS_COMPARE",
                             "args": {
                                 "variable": "16",
@@ -6351,7 +6365,8 @@
                         {
                             "command": "EVENT_INC_VALUE",
                             "args": {
-                                "variable": "L0"
+                                "variable": "L0",
+                                "__collapse": true
                             },
                             "id": "59ed81af-a372-4283-8429-47c05432096f"
                         },
@@ -6423,18 +6438,53 @@
                                                     "children": {
                                                         "true": [
                                                             {
-                                                                "command": "EVENT_TEXT",
+                                                                "command": "EVENT_IF_TRUE",
                                                                 "args": {
-                                                                    "text": [
-                                                                        "Hola Patuquitos.",
-                                                                        "Todes hablan entre elles\nde lo bien que te has\nportado hoy,",
-                                                                        "Benito me lo ha\ncontado todo.",
-                                                                        "Me siento muy orgullosa\nde ti.",
-                                                                        ""
-                                                                    ],
-                                                                    "avatarId": ""
+                                                                    "variable": "L0",
+                                                                    "__collapseElse": false
                                                                 },
-                                                                "id": "4f9092f2-e519-4027-a478-1d1ce34ee6cb"
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Por favor, sal y habla\ncon todo el mundo."
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "f818548d-5dc2-434d-af49-b129ba0b51bf"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Hola Patuquitos.",
+                                                                                    "Todes hablan entre elles\nde lo bien que te has\nportado hoy,",
+                                                                                    "Benito me lo ha\ncontado todo.",
+                                                                                    "Me siento muy orgullosa\nde ti.",
+                                                                                    "Te estoy inmensamente \nagradecida Patuquitos,\neres nuestro angelito.",
+                                                                                    "Seguro que les demás\ntambién quieren\nexpresarte su gratitud.",
+                                                                                    "Por favor, sal y habla\ncon todo el mundo."
+                                                                                ],
+                                                                                "avatarId": "",
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "id": "4f9092f2-e519-4027-a478-1d1ce34ee6cb"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_SET_TRUE",
+                                                                            "args": {
+                                                                                "variable": "L1",
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "id": "540665de-6d4e-4c8f-9fd3-4aae16ce4909"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "id": "c34c96b2-b901-4fe4-8d14-347a9b43eef8"
                                                             }
                                                         ],
                                                         "false": [
@@ -33728,7 +33778,52 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L1",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Hola Patucos.",
+                                                "Felisa ya te lo ha\ndicho, ¿no?",
+                                                "No hago más que\nescuchar a todo el\nmundo hablar maravillas\nde ti.",
+                                                "Has devuelto la vida\na este cementerio,\nmuchas gracias."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "f0f5f38f-022f-4904-a13c-92df1d0409ba"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L1"
+                                        },
+                                        "id": "2fd5355a-a3f8-409b-b71d-ce0ad289e0cc"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Has devuelto la vida\na este cementerio,\nmuchas gracias."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "d655b74d-5fcf-46d1-ba15-9cd2e1afa972"
+                                    }
+                                ]
+                            },
+                            "id": "a92737dd-96b7-4148-ac17-f8889949a7d8"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -75952,6 +76047,14 @@
         {
             "id": "19",
             "name": "ayuda alvaro"
+        },
+        {
+            "id": "3e1e765d-4192-4a01-a508-6340f802fae0__L1",
+            "name": "dialogo 2"
+        },
+        {
+            "id": "d3393892-25fb-4877-b2f3-60c256fcbed0__L1",
+            "name": "otro dialogo"
         }
     ],
     "engineFieldValues": [
@@ -75969,8 +76072,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2462,
-        "worldScrollY": 331,
+        "worldScrollX": 1582,
+        "worldScrollY": 1443,
         "zoom": 210.5,
         "customColorsEnabled": true,
         "sgbEnabled": true,

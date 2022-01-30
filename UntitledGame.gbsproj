@@ -1401,20 +1401,6 @@
                     "startScript": [],
                     "updateScript": [
                         {
-                            "command": "EVENT_VARIABLE_MATH",
-                            "args": {
-                                "vectorX": "L1",
-                                "operation": "add",
-                                "other": "val",
-                                "vectorY": "L0",
-                                "value": 2,
-                                "minValue": "0",
-                                "maxValue": "32767",
-                                "clamp": false
-                            },
-                            "id": "8371648e-12b4-4796-bef3-8ea496545969"
-                        },
-                        {
                             "command": "EVENT_IF_FLAGS_COMPARE",
                             "args": {
                                 "variable": "16",
@@ -1432,6 +1418,20 @@
                                             "vectorY": "L2"
                                         },
                                         "id": "38877ed8-8a6c-4dc0-8fd4-39bd75e44b5e"
+                                    },
+                                    {
+                                        "command": "EVENT_VARIABLE_MATH",
+                                        "args": {
+                                            "vectorX": "L1",
+                                            "operation": "add",
+                                            "other": "val",
+                                            "vectorY": "L0",
+                                            "value": 2,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false
+                                        },
+                                        "id": "8371648e-12b4-4796-bef3-8ea496545969"
                                     },
                                     {
                                         "command": "EVENT_ACTOR_MOVE_TO",
@@ -28436,7 +28436,53 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "c3dd8ce6-3a0f-42e3-809c-413253999f7a",
-                    "x": 34,
+                    "x": 27,
+                    "y": 15
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "f35998a1-c067-47ff-83ef-6e29ba031cc6",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "collisionGroup": "",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Encontraste el\nfrisbee"
+                                ],
+                                "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516"
+                            },
+                            "id": "40d48e47-4f9e-46b3-9126-a7f9dc7801f0"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "37524a6a-bd62-4d75-ac31-ced0d9537f4b"
+                        },
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "30"
+                            },
+                            "id": "f3981cc0-5d4c-4baa-b465-bc25c952a2bc"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "6990e001-0fac-450f-9060-3c770da59a7f",
+                    "x": 36,
                     "y": 15
                 }
             ],
@@ -76072,8 +76118,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1582,
-        "worldScrollY": 1443,
+        "worldScrollX": 1658,
+        "worldScrollY": 1610,
         "zoom": 210.5,
         "customColorsEnabled": true,
         "sgbEnabled": true,
