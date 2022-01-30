@@ -1585,6 +1585,13 @@
                                             "actorId": "$self$"
                                         },
                                         "id": "9b3eceed-bfca-4f1e-b20a-be02cd9ab26f"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "80e23dea-9a3d-4c8c-a4ed-00d37e481298"
                                     }
                                 ],
                                 "false": []
@@ -6810,6 +6817,13 @@
                                             "actorId": "$self$"
                                         },
                                         "id": "0fbf499e-c475-4d4f-9262-9392c945754a"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "56c59cb1-f83c-457b-ac14-8a8dbcb61653"
                                     }
                                 ],
                                 "false": []
@@ -6822,8 +6836,8 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "198b1ddd-3943-4e48-ae38-6b674922e508",
-                    "x": 20,
-                    "y": 7
+                    "x": 21,
+                    "y": 8
                 }
             ],
             "triggers": [
@@ -19117,6 +19131,13 @@
                                             "actorId": "$self$"
                                         },
                                         "id": "fc40784e-ad6d-4e79-b149-cc0bf7c4531a"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "f80903a9-a234-43d5-aecd-e0dc7b8fbcf0"
                                     }
                                 ],
                                 "false": []
@@ -19208,6 +19229,13 @@
                                             "actorId": "$self$"
                                         },
                                         "id": "63fac4da-743b-47d4-927c-1a9ba58cae4f"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "e88bddc5-b5f1-4db3-9217-067ca159d0b1"
                                     }
                                 ],
                                 "false": []
@@ -24581,6 +24609,13 @@
                                             "actorId": "$self$"
                                         },
                                         "id": "be35e03c-fbfe-4a33-9b7f-448ef29b8fe1"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "17d6fcf7-0b6c-4498-8489-f60a167e2b17"
                                     }
                                 ],
                                 "false": []
@@ -28498,6 +28533,13 @@
                                             "actorId": "$self$"
                                         },
                                         "id": "02264dc5-dc30-4c77-a14f-824a3fd59772"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "c596fe35-5f64-4c9f-88b3-cfb083b7edfc"
                                     }
                                 ],
                                 "false": []
@@ -28550,7 +28592,35 @@
                             "id": "f3981cc0-5d4c-4baa-b465-bc25c952a2bc"
                         }
                     ],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "30",
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "4287bd82-81ef-4cf8-bcf2-3bf0175ef299"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "1f179277-e135-49d8-b815-0e890c36355a"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "b4979173-059b-4d70-af1d-fc6ac4be526c"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -32427,9 +32497,44 @@
                                 "variable": "8"
                             },
                             "id": "59618642-140f-4b12-b276-d9b8c082cd58"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "bf97c209-f54d-4594-baf0-851450a46f63"
                         }
                     ],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "31",
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "78f23f57-953c-4272-ae38-112866c2696f"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "56d89be1-ce2d-4c41-b55c-383b2bf10655"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "8090cd33-2a69-4786-b3ae-9f27c7206552"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -76538,9 +76643,9 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 215,
-        "worldScrollY": 1208,
-        "zoom": 210.5,
+        "worldScrollX": 1214,
+        "worldScrollY": 2018,
+        "zoom": 237,
         "customColorsEnabled": true,
         "sgbEnabled": true,
         "customHead": "",
