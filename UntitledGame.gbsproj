@@ -167,14 +167,74 @@
                                         "children": {
                                             "true": [
                                                 {
-                                                    "command": "EVENT_TEXT",
+                                                    "command": "EVENT_IF_TRUE",
                                                     "args": {
-                                                        "text": [
-                                                            "¿Me harías el favor\nde visitar a Emilia?"
-                                                        ],
-                                                        "avatarId": ""
+                                                        "variable": "22",
+                                                        "__collapseElse": false
                                                     },
-                                                    "id": "494f3bb2-5824-4496-a3b6-4687410c881c"
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_IF_TRUE",
+                                                                "args": {
+                                                                    "variable": "L0",
+                                                                    "__collapseElse": false,
+                                                                    "__collapse": false
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Gracias, Patucos, \neres la mejor."
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "6cb22cf9-ae22-4911-8c48-91cc0d4ed288"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "¿Otra vez se sentía\nsola? Pobre Emilia.",
+                                                                                    "Desde aquí veo que la\nhas reunido con Blanca.",
+                                                                                    "Seguro que tiene una\nbuena razón para no",
+                                                                                    "haberla visitado\ndurante tanto tiempo.",
+                                                                                    "Gracias, Patucos, \neres la mejor."
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "114ca29c-932c-490d-87b7-eafc26f5c620"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_SET_TRUE",
+                                                                            "args": {
+                                                                                "variable": "L0"
+                                                                            },
+                                                                            "id": "d55aea21-39b5-4f2c-9a89-dba654646a5a"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "id": "8f7fa6dd-a023-4c65-8985-d441f66ba731"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "¿Me harías el favor\nde visitar a Emilia?"
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "494f3bb2-5824-4496-a3b6-4687410c881c"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "999b319f-bb48-4abe-a151-0e1f49d5567c"
                                                 }
                                             ],
                                             "false": []
@@ -819,27 +879,6 @@
                     "y": 30
                 },
                 {
-                    "name": "",
-                    "frame": 0,
-                    "animate": false,
-                    "spriteSheetId": "ede130e6-013a-42d1-a786-1aed3fd3cf32",
-                    "direction": "down",
-                    "moveSpeed": 1,
-                    "animSpeed": 15,
-                    "paletteId": "",
-                    "isPinned": false,
-                    "collisionGroup": "",
-                    "script": [],
-                    "startScript": [],
-                    "updateScript": [],
-                    "hit1Script": [],
-                    "hit2Script": [],
-                    "hit3Script": [],
-                    "id": "c1f698a7-b829-4f9c-bd56-1e20bee7cc40",
-                    "x": 29,
-                    "y": 8
-                },
-                {
                     "name": "fondo 1",
                     "frame": 0,
                     "animate": false,
@@ -1042,6 +1081,110 @@
                     "id": "89e1a5c9-b8a8-4492-879c-803ff348680d",
                     "x": 32,
                     "y": 6
+                },
+                {
+                    "name": "blanca",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "fece2034-5293-4cfc-bf46-c2730a9d4d7b",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "collisionGroup": "",
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "13",
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "L0",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Se lo tenemos que\ndevolver a Emilia, venga."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "2fb62778-84d8-4c6a-a0ed-6c3ce6e92cc6"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "¿Dónde estará?",
+                                                            "¿Dónde habían puesto\na mi Emilia?"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "eb875f08-2c63-41a1-90f8-24cd2ba573c0"
+                                                },
+                                                {
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "31",
+                                                        "__collapseElse": true
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ooh, una gatica.\nMisimisimisi.",
+                                                                        "¡Ah!",
+                                                                        "¡El collar de mi Emilia!",
+                                                                        "¿Y cómo es que lo\ntienes tú, bonica?",
+                                                                        "Se lo tenemos que\ndevolver a Emilia, venga."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "85878a67-deb1-400d-900d-15e181d01aae"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_SET_TRUE",
+                                                                "args": {
+                                                                    "variable": "L0"
+                                                                },
+                                                                "id": "3e6fe87a-5caf-4e6b-b0d5-49d8ddc47294"
+                                                            }
+                                                        ],
+                                                        "false": []
+                                                    },
+                                                    "id": "fe9b5ea2-f505-472a-858a-abdd543298a7"
+                                                }
+                                            ]
+                                        },
+                                        "id": "7c36715a-6d36-4f46-9a92-66c156383b63"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "d26c4c82-c250-4d0c-9e4b-6119643ad39a"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "ff62c3d3-4d5d-417c-8663-cb35bcca3d67",
+                    "x": 25,
+                    "y": 30
                 }
             ],
             "triggers": [
@@ -62433,15 +62576,6 @@
     ],
     "music": [
         {
-            "id": "3723d1ad-f695-486d-84c6-036b4ee82c0a",
-            "name": "PerroRapido",
-            "filename": "PerroRapido.mod",
-            "settings": {
-                "disableSpeedConversion": false
-            },
-            "type": "mod"
-        },
-        {
             "id": "05ef4530-7c73-4949-9a26-c61ff0df5f16",
             "name": "Rulz_BattleTheme",
             "filename": "Rulz_BattleTheme.mod",
@@ -62607,6 +62741,13 @@
             "type": "mod"
         },
         {
+            "id": "9bdad4f0-8a07-470b-bfe0-d7a163fd6fe9",
+            "name": "cementeriovivo",
+            "filename": "cementeriovivo.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
             "id": "354b92bf-319b-4656-8e8a-abe356ff7d5a",
             "name": "conseguirobjeto",
             "filename": "conseguirobjeto.mod",
@@ -62645,13 +62786,6 @@
             "id": "162f293c-e326-4b99-8b9a-fb38822b22a0",
             "name": "misiones",
             "filename": "misiones.mod",
-            "settings": {},
-            "type": "mod"
-        },
-        {
-            "id": "9bdad4f0-8a07-470b-bfe0-d7a163fd6fe9",
-            "name": "perrolento",
-            "filename": "perrolento.mod",
             "settings": {},
             "type": "mod"
         },
@@ -62919,6 +63053,18 @@
         {
             "id": "89e1a5c9-b8a8-4492-879c-803ff348680d__L0",
             "name": "dialogo"
+        },
+        {
+            "id": "ff62c3d3-4d5d-417c-8663-cb35bcca3d67__L0",
+            "name": "dialogo"
+        },
+        {
+            "id": "31",
+            "name": "medallon"
+        },
+        {
+            "id": "86b6f8fc-9a59-4e2f-a786-839d38e88282__L0",
+            "name": "dialogo 2"
         }
     ],
     "engineFieldValues": [
@@ -62936,8 +63082,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 771,
-        "worldScrollY": 1451,
+        "worldScrollX": 879,
+        "worldScrollY": 1680,
         "zoom": 237,
         "customColorsEnabled": true,
         "sgbEnabled": true,
