@@ -499,14 +499,38 @@
                                                         ],
                                                         "false": [
                                                             {
-                                                                "command": "EVENT_TEXT",
+                                                                "command": "EVENT_IF_TRUE",
                                                                 "args": {
-                                                                    "text": [
-                                                                        "El medallón...\nAayyy... ay..."
-                                                                    ],
-                                                                    "avatarId": ""
+                                                                    "variable": "14",
+                                                                    "__collapseElse": false
                                                                 },
-                                                                "id": "baa2acac-558f-4557-8f4d-f9f90f0df052"
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "No te apures por mí,\nya no lloraré, estoy\ncon mi Blanca."
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "43d615f3-b31d-4d4b-88a4-c2344eb56325"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "El medallón...\nAayyy... ay..."
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "baa2acac-558f-4557-8f4d-f9f90f0df052"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "id": "c1a5aefb-0e02-443f-b2ed-fccc36154306"
                                                             }
                                                         ]
                                                     },
