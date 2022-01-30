@@ -78316,6 +78316,41 @@
                                     "actorId": "4"
                                 },
                                 "id": "30dde271-6aa2-47a5-96bb-8b824820fcb9"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                "args": {
+                                    "actorId": "0"
+                                },
+                                "id": "d0b521fe-b28f-4542-bd7b-e6df9e919dc8"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                "args": {
+                                    "actorId": "1"
+                                },
+                                "id": "8e77c74e-0d3e-4d0f-8f1a-31370c043226"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                "args": {
+                                    "actorId": "2"
+                                },
+                                "id": "f9c81eca-76ef-479c-8dc2-0c0207175430"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                "args": {
+                                    "actorId": "3"
+                                },
+                                "id": "e8f13ad5-89fc-482f-bce2-fdc8c2aebc5e"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                "args": {
+                                    "actorId": "4"
+                                },
+                                "id": "7c54fefd-4bbf-4a98-9016-381b9b4004cc"
                             }
                         ],
                         "false": [
@@ -78353,6 +78388,42 @@
                                     "actorId": "4"
                                 },
                                 "id": "1b1e8969-8bb8-4d8b-bf76-d2954a7fc5e8"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                                "args": {
+                                    "actorId": "0"
+                                },
+                                "id": "64335875-2b23-4750-b9df-f35e1553a255"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                                "args": {
+                                    "actorId": "1"
+                                },
+                                "id": "72dcb94d-aa12-4391-9cf5-45dee7df5854"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                                "args": {
+                                    "actorId": "2"
+                                },
+                                "id": "148af531-a4f0-412a-8587-f47e18666438"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                                "args": {
+                                    "actorId": "3"
+                                },
+                                "id": "e4f2089f-1bba-406c-8c42-178b711c2830"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                                "args": {
+                                    "actorId": "4",
+                                    "__collapse": false
+                                },
+                                "id": "2c9623ff-fe9c-4c85-861e-af125d0dac88"
                             }
                         ]
                     },
@@ -79045,8 +79116,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1038,
-        "worldScrollY": 1555,
+        "worldScrollX": 1089,
+        "worldScrollY": 1553,
         "zoom": 210.5,
         "customColorsEnabled": true,
         "sgbEnabled": true,
