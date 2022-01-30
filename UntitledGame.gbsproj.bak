@@ -284,30 +284,11 @@
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_ACTOR_EMOTE",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "emoteId": "362efd0f-67c7-491a-8b49-482b17b23e32"
-                                        },
-                                        "id": "ac68fe38-d106-4480-9998-8086c17fbc72"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "No te escucha, \nestá llorando."
-                                            ],
-                                            "avatarId": ""
-                                        },
-                                        "id": "49932603-1cc1-4c2e-944b-0b849145aefc"
-                                    }
-                                ],
-                                "false": [
-                                    {
                                         "command": "EVENT_IF_FALSE",
                                         "args": {
                                             "variable": "2",
-                                            "__collapseElse": false
+                                            "__collapseElse": false,
+                                            "__collapse": true
                                         },
                                         "children": {
                                             "true": [
@@ -498,6 +479,26 @@
                                         },
                                         "id": "d02d060a-a3f0-4d9b-be31-16a8218ced04"
                                     }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "No te escucha, \nestá llorando."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "49932603-1cc1-4c2e-944b-0b849145aefc"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "emoteId": "362efd0f-67c7-491a-8b49-482b17b23e32"
+                                        },
+                                        "id": "ac68fe38-d106-4480-9998-8086c17fbc72"
+                                    }
                                 ]
                             },
                             "id": "2c7f962a-ade0-4f37-87fb-d9aa261dfd12"
@@ -596,6 +597,14 @@
                                                     "children": {
                                                         "true": [
                                                             {
+                                                                "command": "EVENT_ACTOR_SET_STATE",
+                                                                "args": {
+                                                                    "actorId": "$self$",
+                                                                    "spriteStateId": "feliz"
+                                                                },
+                                                                "id": "a9d8b607-e821-4ae6-bf14-3f925e92e43e"
+                                                            },
+                                                            {
                                                                 "command": "EVENT_TEXT",
                                                                 "args": {
                                                                     "text": [
@@ -607,7 +616,8 @@
                                                                         "No te preocupes por mí,\n Pepo me cuida.",
                                                                         "Nos vemos, Patutus."
                                                                     ],
-                                                                    "avatarId": ""
+                                                                    "avatarId": "",
+                                                                    "__collapse": false
                                                                 },
                                                                 "id": "f041a1bb-f3b7-4901-bfdd-35cedecc8e4d"
                                                             },
@@ -617,6 +627,22 @@
                                                                     "variable": "23"
                                                                 },
                                                                 "id": "1e2be5a9-874a-4ca6-afc8-c6b267f40820"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_ACTOR_SET_SPRITE",
+                                                                "args": {
+                                                                    "actorId": "89e1a5c9-b8a8-4492-879c-803ff348680d",
+                                                                    "spriteSheetId": "aa027616-3ea4-48d5-81f4-78d9c0d28087"
+                                                                },
+                                                                "id": "f6b714db-17a9-4c48-8f03-5cb11bf667ef"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_ACTOR_EMOTE",
+                                                                "args": {
+                                                                    "actorId": "89e1a5c9-b8a8-4492-879c-803ff348680d",
+                                                                    "emoteId": "e20504d8-3d88-4b71-b6d3-0e291bab970b"
+                                                                },
+                                                                "id": "1bed6e4c-0716-4a89-b88e-2dd88d44d117"
                                                             }
                                                         ],
                                                         "false": [
@@ -50906,7 +50932,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         },
                                         {
@@ -50919,7 +50945,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         }
                                     ]
@@ -50937,7 +50963,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         },
                                         {
@@ -50950,7 +50976,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         }
                                     ]
@@ -59661,7 +59687,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 1489,
-        "worldScrollY": 2372,
+        "worldScrollY": 1736,
         "zoom": 237,
         "customColorsEnabled": true,
         "sgbEnabled": true,
@@ -59690,9 +59716,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            30,
+            205,
             175,
-            732
+            557
         ],
         "showNavigator": true,
         "defaultFontId": "948c169c-8e4b-491c-a5f0-66898bbf45d9",
