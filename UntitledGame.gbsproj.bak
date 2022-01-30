@@ -23266,7 +23266,7 @@
                             "id": "c246e8b0-889a-424b-b634-541bfadfbf49",
                             "command": "EVENT_IF_TRUE",
                             "args": {
-                                "variable": "L0",
+                                "variable": "7",
                                 "__collapseElse": true,
                                 "__label": "Quest Check",
                                 "__collapse": false
@@ -79122,8 +79122,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 511,
-        "worldScrollY": 1357,
+        "worldScrollX": 476,
+        "worldScrollY": 1313,
         "zoom": 184,
         "customColorsEnabled": true,
         "sgbEnabled": true,

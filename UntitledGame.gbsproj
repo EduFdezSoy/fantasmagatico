@@ -50,7 +50,8 @@
                                                 "¿Me harías el favor de\nir a visitarla?",
                                                 "Recuerda que si lo\nnecesitas puedes volver\n a la vida pulsando \"B\"."
                                             ],
-                                            "avatarId": ""
+                                            "avatarId": "",
+                                            "__collapse": true
                                         },
                                         "id": "53243102-12d8-4bc1-b1c9-36cb992a1c32"
                                     },
@@ -67,14 +68,16 @@
                                             "text": [
                                                 "Habla con Emilia"
                                             ],
-                                            "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516"
+                                            "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516",
+                                            "__collapse": true
                                         },
                                         "id": "79740c43-008b-4829-9bad-9274ef4bc4b2"
                                     },
                                     {
                                         "command": "EVENT_SET_TRUE",
                                         "args": {
-                                            "variable": "500"
+                                            "variable": "500",
+                                            "__collapse": true
                                         },
                                         "id": "ee4b3b4b-a88f-4c21-8c68-577dee329ab3"
                                     },
@@ -83,7 +86,8 @@
                                         "args": {
                                             "variable": "500",
                                             "__collapseElse": true,
-                                            "__comment": false
+                                            "__comment": false,
+                                            "__collapse": true
                                         },
                                         "children": {
                                             "true": [
@@ -175,54 +179,6 @@
                                                     "children": {
                                                         "true": [
                                                             {
-                                                                "command": "EVENT_IF_TRUE",
-                                                                "args": {
-                                                                    "variable": "L0",
-                                                                    "__collapseElse": false,
-                                                                    "__collapse": false
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "command": "EVENT_TEXT",
-                                                                            "args": {
-                                                                                "text": [
-                                                                                    "Gracias, Patucos, \neres la mejor."
-                                                                                ],
-                                                                                "avatarId": ""
-                                                                            },
-                                                                            "id": "6cb22cf9-ae22-4911-8c48-91cc0d4ed288"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "command": "EVENT_TEXT",
-                                                                            "args": {
-                                                                                "text": [
-                                                                                    "¿Otra vez se sentía\nsola? Pobre Emilia.",
-                                                                                    "Desde aquí veo que la\nhas reunido con Blanca.",
-                                                                                    "Seguro que tiene una\nbuena razón para no",
-                                                                                    "haberla visitado\ndurante tanto tiempo.",
-                                                                                    "Gracias, Patucos, \neres la mejor."
-                                                                                ],
-                                                                                "avatarId": ""
-                                                                            },
-                                                                            "id": "114ca29c-932c-490d-87b7-eafc26f5c620"
-                                                                        },
-                                                                        {
-                                                                            "command": "EVENT_SET_TRUE",
-                                                                            "args": {
-                                                                                "variable": "L0"
-                                                                            },
-                                                                            "id": "d55aea21-39b5-4f2c-9a89-dba654646a5a"
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                "id": "8f7fa6dd-a023-4c65-8985-d441f66ba731"
-                                                            }
-                                                        ],
-                                                        "false": [
-                                                            {
                                                                 "command": "EVENT_TEXT",
                                                                 "args": {
                                                                     "text": [
@@ -232,12 +188,62 @@
                                                                 },
                                                                 "id": "494f3bb2-5824-4496-a3b6-4687410c881c"
                                                             }
-                                                        ]
+                                                        ],
+                                                        "false": []
                                                     },
                                                     "id": "999b319f-bb48-4abe-a151-0e1f49d5567c"
                                                 }
                                             ],
-                                            "false": []
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "L0",
+                                                        "__collapseElse": false,
+                                                        "__collapse": true
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "¿Otra vez se sentía\nsola? Pobre Emilia.",
+                                                                        "Desde aquí veo que la\nhas reunido con Blanca.",
+                                                                        "Seguro que tiene una\nbuena razón para no",
+                                                                        "haberla visitado\ndurante tanto tiempo.",
+                                                                        "Gracias, Patucos, \neres la mejor."
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__collapse": true
+                                                                },
+                                                                "id": "114ca29c-932c-490d-87b7-eafc26f5c620"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_SET_TRUE",
+                                                                "args": {
+                                                                    "variable": "L0",
+                                                                    "__collapse": false
+                                                                },
+                                                                "id": "d55aea21-39b5-4f2c-9a89-dba654646a5a"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Gracias, Patucos, \neres la mejor."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "6cb22cf9-ae22-4911-8c48-91cc0d4ed288"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "8f7fa6dd-a023-4c65-8985-d441f66ba731"
+                                                }
+                                            ]
                                         },
                                         "id": "5044ebc7-9824-4297-b267-83f71fd4d77e"
                                     }
@@ -69718,7 +69724,7 @@
             "numFrames": 4.375,
             "type": "animated",
             "filename": "mision_8.png",
-            "checksum": "43b85576cca8a674564e51c853fe3478f9de22fb",
+            "checksum": "4ff2c7e28501ef288e2d4210d4353c561f2752fb",
             "width": 70,
             "height": 14,
             "states": [
@@ -79122,8 +79128,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 476,
-        "worldScrollY": 1313,
+        "worldScrollX": 1105,
+        "worldScrollY": 1186,
         "zoom": 184,
         "customColorsEnabled": true,
         "sgbEnabled": true,
