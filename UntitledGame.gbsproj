@@ -33890,7 +33890,55 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        },
+                                        "id": "fc8576e9-2414-449a-9590-ce203ecffeb5"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Ay Patucos, mi niña, \nqué buena eres. Muchas \ngracias por todo.",
+                                                "Me has consolado y me \nhas traído a mi Blanquita.",
+                                                "Menos mal que te \ntengo aquí.",
+                                                "Ya tampoco queda mucho \npara que ella se mude \ncon nosotras,",
+                                                "entonces no me volveré \na quedar sola, podré \nabrazarla siempre que \nquiera.",
+                                                "Ay, qué ganas.",
+                                                "Nos visitarás todos \nlos días, ¿verdad \nbonica?"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "c1b216ce-d6ae-4fe9-b7a6-53e333b1cdea"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "os visitarás todos \nlos días, ¿verdad \nbonica?"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "2ca7f671-86ab-4198-8012-d25c8f6bbf46"
+                                    }
+                                ]
+                            },
+                            "id": "3e6420fa-4a36-41b6-ae02-9bca2cd7440f"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -33911,7 +33959,55 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        },
+                                        "id": "1f778d0c-8ac9-423e-af54-86a0031f3727"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Patu Patu Patututus.",
+                                                "Muchas gracias por\ndevolverme el frisbee,\npor acompañar a Pepo, y",
+                                                "por hacerle entender a\nChispa que POR FAVOR\nquiero que deje\nde robarme, jajaja.",
+                                                "Ah, y que sepas que \nPepo también te ha \ntomado cariño eh,",
+                                                "que es un sieso, \npero de tanto verte \npor aquí y haberte \nacercado a él hoy,",
+                                                "estoy segure de que ya \nte considera su amiga, \njajaja.",
+                                                "Cómo te quiero, Patus. \nGracias por todo."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "fa17d64b-8125-4cda-92bc-f56126b860b6"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Cómo te quiero, Patus. \nGracias por todo."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "6f31a8d5-4c2e-4bde-81cc-f73687959190"
+                                    }
+                                ]
+                            },
+                            "id": "c1f1293e-a705-40f7-af44-1d3cd6282a3b"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -34392,7 +34488,62 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L4",
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L4"
+                                        },
+                                        "id": "90701329-6c54-4029-9200-50888db244b5"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Ay la gatica de antes.",
+                                                "Gracias por guiarme \nhasta mi amor.",
+                                                "Una ya tiene una edad y \nse le olvidan algunas \ncosicas, jaja.",
+                                                "Eres muy amable, me \ngustaría poder darte \nuna chuche,",
+                                                "pero solo tengo \ncaramelos de café, no \ncreo que te gusten."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "e688d342-c7ab-4198-b7c2-06b2d396d23b"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Has sido acariciada \npor Blanca. Te gusta."
+                                            ],
+                                            "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516"
+                                        },
+                                        "id": "b33b9b10-3b32-469d-b796-4f192e7adf69"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "De ti no me olvidaré, \nbonica. Gracias por todo."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "1011cb59-68b6-4b3b-b349-d063b8ef8bfc"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "acbde800-b429-43c4-812f-9992340fa3d5"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -39410,7 +39561,61 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L1",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "¡Holaaa!",
+                                                "¡Ya me he acordado de\nquién eras tú!",
+                                                "¡Jeje!",
+                                                "Bueno, en realidad \nescuché a ese chico \nde ahí llamarte \nPatacus, ¿no?",
+                                                "O algo así, jejeje.",
+                                                "¡Ah!",
+                                                "Yo tenía algo que \ndecirte, Potucas.",
+                                                "...",
+                                                "¡Ah! ¡Sí!",
+                                                "¡Que ya no me llevaré \ncosas que no son mías!",
+                                                "Jeje. No poseía \nconcepto de la \npropiedad privada. Jeje.",
+                                                "...",
+                                                "¡Adiós Plutarco!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "8852723e-c5f0-4285-a14e-73da3ccff442"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L1"
+                                        },
+                                        "id": "3fb1f570-5534-4f8d-aeb2-2a63db54de59"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "¡Adiós Plutarco!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "317b8133-0253-4bcf-a01e-6e56de8c1046"
+                                    }
+                                ]
+                            },
+                            "id": "48a92590-787a-496f-a277-2aad58e6523a"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -39987,7 +40192,53 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L1",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L1"
+                                        },
+                                        "id": "37de3e6c-add7-4165-865f-e8812305b48d"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "¡Patucos! ¡Mira!",
+                                                "¡Estoy con Jaime, \npor fin!",
+                                                "Me ha dicho que una gata \nle ayudó a decidirse \na verme.",
+                                                "Esa no puede ser otra\nque tú.",
+                                                "Me has devuelto mi \ncuerpo y a mi hermano, \nno sabes cuánto te lo \nagradezco, bichito."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "b85406c5-8a6f-4a77-97f2-d13eb255879f"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Me has devuelto mi \ncuerpo y a mi hermano, \nno sabes cuánto te lo \nagradezco, bichito."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "6a80b83f-d84e-4b83-87a1-509b14fd9c4b"
+                                    }
+                                ]
+                            },
+                            "id": "58ad202d-549c-4569-b3d2-0877151822fc"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -40008,15 +40259,76 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        },
+                                        "id": "58f82e3d-bfb7-49b3-a434-f52575892cb9"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Tú otra vez. Uhm...",
+                                                "Me siento un poco tonto \ndiciéndole esto a una \ngata pero... gracias.",
+                                                "Si no fuera por ti no me \nhabría atrevido a \nvisitar a Álvaro.",
+                                                "Cuando vi el marco y las \ndos fotos aquí lo \nentendí todo.",
+                                                "Siempre intentaste \nayudarme.",
+                                                "Que sepas que lo has \nconseguido. A partir \nde hoy vendré cada \nvez que pueda.",
+                                                "No me importa lo que \ndiga mi madre, ni pienso \nocultárselo.",
+                                                "Total, ella siempre nos \nha tratado mal, y Álvaro \nsolía decir que",
+                                                "no le debemos ningún \nrespeto solo por \nhabernos parido, y \ncreo que tiene razón. ",
+                                                "Muchas gracias, bichito."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "9328a846-d428-4e16-a29a-7b764791d50f"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Has sido acariciada \npor Jaime. Te gusta"
+                                            ],
+                                            "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516"
+                                        },
+                                        "id": "db350ad4-9c4f-417d-9a81-79e11b92b8ce"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Muchas gracias, bichito."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "7c4f7914-6761-4fde-aa1b-6568ecb55dc8"
+                                    }
+                                ]
+                            },
+                            "id": "a29ed741-735f-458a-8a0b-cab89e158143"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "d91d5695-d276-40a0-8ba7-1f7b816d83b1",
-                    "x": 12,
-                    "y": 32
+                    "x": 3,
+                    "y": 16
                 }
             ],
             "triggers": [
@@ -76101,6 +76413,30 @@
         {
             "id": "d3393892-25fb-4877-b2f3-60c256fcbed0__L1",
             "name": "otro dialogo"
+        },
+        {
+            "id": "62916904-a5a4-4d7f-980e-e9eac11d7c07__L0",
+            "name": "dialogo"
+        },
+        {
+            "id": "5e23d658-cf0c-45a3-a275-fd5e0e24c7a7__L0",
+            "name": "dialgoo"
+        },
+        {
+            "id": "4f120236-785e-484b-acc1-d61886ed7c8f__L1",
+            "name": "dialog fin"
+        },
+        {
+            "id": "1a3d49c0-1425-4a1b-9ab8-7d3733b67fd7__L1",
+            "name": "dialog fin"
+        },
+        {
+            "id": "b74b1695-6bf3-47cd-941d-c83cffe98651__L4",
+            "name": "dialogo fin"
+        },
+        {
+            "id": "d91d5695-d276-40a0-8ba7-1f7b816d83b1__L0",
+            "name": "dialogo fin"
         }
     ],
     "engineFieldValues": [
@@ -76118,8 +76454,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1658,
-        "worldScrollY": 1610,
+        "worldScrollX": 947,
+        "worldScrollY": 2094,
         "zoom": 210.5,
         "customColorsEnabled": true,
         "sgbEnabled": true,

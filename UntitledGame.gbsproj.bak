@@ -1401,20 +1401,6 @@
                     "startScript": [],
                     "updateScript": [
                         {
-                            "command": "EVENT_VARIABLE_MATH",
-                            "args": {
-                                "vectorX": "L1",
-                                "operation": "add",
-                                "other": "val",
-                                "vectorY": "L0",
-                                "value": 2,
-                                "minValue": "0",
-                                "maxValue": "32767",
-                                "clamp": false
-                            },
-                            "id": "8371648e-12b4-4796-bef3-8ea496545969"
-                        },
-                        {
                             "command": "EVENT_IF_FLAGS_COMPARE",
                             "args": {
                                 "variable": "16",
@@ -1432,6 +1418,20 @@
                                             "vectorY": "L2"
                                         },
                                         "id": "38877ed8-8a6c-4dc0-8fd4-39bd75e44b5e"
+                                    },
+                                    {
+                                        "command": "EVENT_VARIABLE_MATH",
+                                        "args": {
+                                            "vectorX": "L1",
+                                            "operation": "add",
+                                            "other": "val",
+                                            "vectorY": "L0",
+                                            "value": 2,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false
+                                        },
+                                        "id": "8371648e-12b4-4796-bef3-8ea496545969"
                                     },
                                     {
                                         "command": "EVENT_ACTOR_MOVE_TO",
@@ -28436,7 +28436,53 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "c3dd8ce6-3a0f-42e3-809c-413253999f7a",
-                    "x": 34,
+                    "x": 27,
+                    "y": 15
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "f35998a1-c067-47ff-83ef-6e29ba031cc6",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "collisionGroup": "",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Encontraste el\nfrisbee"
+                                ],
+                                "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516"
+                            },
+                            "id": "40d48e47-4f9e-46b3-9126-a7f9dc7801f0"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "37524a6a-bd62-4d75-ac31-ced0d9537f4b"
+                        },
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "30"
+                            },
+                            "id": "f3981cc0-5d4c-4baa-b465-bc25c952a2bc"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "6990e001-0fac-450f-9060-3c770da59a7f",
+                    "x": 36,
                     "y": 15
                 }
             ],
@@ -33844,7 +33890,55 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        },
+                                        "id": "fc8576e9-2414-449a-9590-ce203ecffeb5"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Ay Patucos, mi niña, \nqué buena eres. Muchas \ngracias por todo.",
+                                                "Me has consolado y me \nhas traído a mi Blanquita.",
+                                                "Menos mal que te \ntengo aquí.",
+                                                "Ya tampoco queda mucho \npara que ella se mude \ncon nosotras,",
+                                                "entonces no me volveré \na quedar sola, podré \nabrazarla siempre que \nquiera.",
+                                                "Ay, qué ganas.",
+                                                "Nos visitarás todos \nlos días, ¿verdad \nbonica?"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "c1b216ce-d6ae-4fe9-b7a6-53e333b1cdea"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "os visitarás todos \nlos días, ¿verdad \nbonica?"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "2ca7f671-86ab-4198-8012-d25c8f6bbf46"
+                                    }
+                                ]
+                            },
+                            "id": "3e6420fa-4a36-41b6-ae02-9bca2cd7440f"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -33865,7 +33959,55 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        },
+                                        "id": "1f778d0c-8ac9-423e-af54-86a0031f3727"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Patu Patu Patututus.",
+                                                "Muchas gracias por\ndevolverme el frisbee,\npor acompañar a Pepo, y",
+                                                "por hacerle entender a\nChispa que POR FAVOR\nquiero que deje\nde robarme, jajaja.",
+                                                "Ah, y que sepas que \nPepo también te ha \ntomado cariño eh,",
+                                                "que es un sieso, \npero de tanto verte \npor aquí y haberte \nacercado a él hoy,",
+                                                "estoy segure de que ya \nte considera su amiga, \njajaja.",
+                                                "Cómo te quiero, Patus. \nGracias por todo."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "fa17d64b-8125-4cda-92bc-f56126b860b6"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Cómo te quiero, Patus. \nGracias por todo."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "6f31a8d5-4c2e-4bde-81cc-f73687959190"
+                                    }
+                                ]
+                            },
+                            "id": "c1f1293e-a705-40f7-af44-1d3cd6282a3b"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -39364,7 +39506,61 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L1",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "¡Holaaa!",
+                                                "¡Ya me he acordado de\nquién eras tú!",
+                                                "¡Jeje!",
+                                                "Bueno, en realidad \nescuché a ese chico \nde ahí llamarte \nPatacus, ¿no?",
+                                                "O algo así, jejeje.",
+                                                "¡Ah!",
+                                                "Yo tenía algo que \ndecirte, Potucas.",
+                                                "...",
+                                                "¡Ah! ¡Sí!",
+                                                "¡Que ya no me llevaré \ncosas que no son mías!",
+                                                "Jeje. No poseía \nconcepto de la \npropiedad privada. Jeje.",
+                                                "...",
+                                                "¡Adiós Plutarco!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "8852723e-c5f0-4285-a14e-73da3ccff442"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L1"
+                                        },
+                                        "id": "3fb1f570-5534-4f8d-aeb2-2a63db54de59"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "¡Adiós Plutarco!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "317b8133-0253-4bcf-a01e-6e56de8c1046"
+                                    }
+                                ]
+                            },
+                            "id": "48a92590-787a-496f-a277-2aad58e6523a"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -39941,7 +40137,53 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L1",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L1"
+                                        },
+                                        "id": "37de3e6c-add7-4165-865f-e8812305b48d"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "¡Patucos! ¡Mira!",
+                                                "¡Estoy con Jaime, \npor fin!",
+                                                "Me ha dicho que una gata \nle ayudó a decidirse \na verme.",
+                                                "Esa no puede ser otra\nque tú.",
+                                                "Me has devuelto mi \ncuerpo y a mi hermano, \nno sabes cuánto te lo \nagradezco, bichito."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "b85406c5-8a6f-4a77-97f2-d13eb255879f"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Me has devuelto mi \ncuerpo y a mi hermano, \nno sabes cuánto te lo \nagradezco, bichito."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "6a80b83f-d84e-4b83-87a1-509b14fd9c4b"
+                                    }
+                                ]
+                            },
+                            "id": "58ad202d-549c-4569-b3d2-0877151822fc"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -39969,8 +40211,8 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "d91d5695-d276-40a0-8ba7-1f7b816d83b1",
-                    "x": 12,
-                    "y": 32
+                    "x": 3,
+                    "y": 16
                 }
             ],
             "triggers": [
@@ -76055,6 +76297,22 @@
         {
             "id": "d3393892-25fb-4877-b2f3-60c256fcbed0__L1",
             "name": "otro dialogo"
+        },
+        {
+            "id": "62916904-a5a4-4d7f-980e-e9eac11d7c07__L0",
+            "name": "dialogo"
+        },
+        {
+            "id": "5e23d658-cf0c-45a3-a275-fd5e0e24c7a7__L0",
+            "name": "dialgoo"
+        },
+        {
+            "id": "4f120236-785e-484b-acc1-d61886ed7c8f__L1",
+            "name": "dialog fin"
+        },
+        {
+            "id": "1a3d49c0-1425-4a1b-9ab8-7d3733b67fd7__L1",
+            "name": "dialog fin"
         }
     ],
     "engineFieldValues": [
@@ -76072,8 +76330,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1582,
-        "worldScrollY": 1443,
+        "worldScrollX": 1633,
+        "worldScrollY": 2109,
         "zoom": 210.5,
         "customColorsEnabled": true,
         "sgbEnabled": true,
