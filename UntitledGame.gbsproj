@@ -36718,7 +36718,16 @@
                             "id": "9dc25a00-8661-4111-bf1d-0e5176a48bd6"
                         }
                     ],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_SET_STATE",
+                            "args": {
+                                "actorId": "$self$",
+                                "spriteStateId": "feliz"
+                            },
+                            "id": "c02fb169-5340-45a5-8933-96978b69e0bb"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -79361,8 +79370,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 914,
-        "worldScrollY": 1100,
+        "worldScrollX": 1280,
+        "worldScrollY": 1052,
         "zoom": 157.5,
         "customColorsEnabled": true,
         "sgbEnabled": true,
