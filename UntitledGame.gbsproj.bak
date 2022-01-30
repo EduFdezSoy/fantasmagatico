@@ -34488,7 +34488,62 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L4",
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L4"
+                                        },
+                                        "id": "90701329-6c54-4029-9200-50888db244b5"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Ay la gatica de antes.",
+                                                "Gracias por guiarme \nhasta mi amor.",
+                                                "Una ya tiene una edad y \nse le olvidan algunas \ncosicas, jaja.",
+                                                "Eres muy amable, me \ngustaría poder darte \nuna chuche,",
+                                                "pero solo tengo \ncaramelos de café, no \ncreo que te gusten."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "e688d342-c7ab-4198-b7c2-06b2d396d23b"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Has sido acariciada \npor Blanca. Te gusta."
+                                            ],
+                                            "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516"
+                                        },
+                                        "id": "b33b9b10-3b32-469d-b796-4f192e7adf69"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "De ti no me olvidaré, \nbonica. Gracias por todo."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "1011cb59-68b6-4b3b-b349-d063b8ef8bfc"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "acbde800-b429-43c4-812f-9992340fa3d5"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -40204,7 +40259,68 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        },
+                                        "id": "58f82e3d-bfb7-49b3-a434-f52575892cb9"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Tú otra vez. Uhm...",
+                                                "Me siento un poco tonto \ndiciéndole esto a una \ngata pero... gracias.",
+                                                "Si no fuera por ti no me \nhabría atrevido a \nvisitar a Álvaro.",
+                                                "Cuando vi el marco y las \ndos fotos aquí lo \nentendí todo.",
+                                                "Siempre intentaste \nayudarme.",
+                                                "Que sepas que lo has \nconseguido. A partir \nde hoy vendré cada \nvez que pueda.",
+                                                "No me importa lo que \ndiga mi madre, ni pienso \nocultárselo.",
+                                                "Total, ella siempre nos \nha tratado mal, y Álvaro \nsolía decir que",
+                                                "no le debemos ningún \nrespeto solo por \nhabernos parido, y \ncreo que tiene razón. ",
+                                                "Muchas gracias, bichito."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "9328a846-d428-4e16-a29a-7b764791d50f"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Has sido acariciada \npor Jaime. Te gusta"
+                                            ],
+                                            "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516"
+                                        },
+                                        "id": "db350ad4-9c4f-417d-9a81-79e11b92b8ce"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Muchas gracias, bichito."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "7c4f7914-6761-4fde-aa1b-6568ecb55dc8"
+                                    }
+                                ]
+                            },
+                            "id": "a29ed741-735f-458a-8a0b-cab89e158143"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -76313,6 +76429,14 @@
         {
             "id": "1a3d49c0-1425-4a1b-9ab8-7d3733b67fd7__L1",
             "name": "dialog fin"
+        },
+        {
+            "id": "b74b1695-6bf3-47cd-941d-c83cffe98651__L4",
+            "name": "dialogo fin"
+        },
+        {
+            "id": "d91d5695-d276-40a0-8ba7-1f7b816d83b1__L0",
+            "name": "dialogo fin"
         }
     ],
     "engineFieldValues": [
@@ -76330,8 +76454,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1633,
-        "worldScrollY": 2109,
+        "worldScrollX": 947,
+        "worldScrollY": 2094,
         "zoom": 210.5,
         "customColorsEnabled": true,
         "sgbEnabled": true,
