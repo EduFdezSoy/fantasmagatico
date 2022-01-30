@@ -28267,19 +28267,6 @@
                                                 "$variable[0]$": "13"
                                             },
                                             "id": "38cc7753-4303-459c-8fa3-98712f82f1e0"
-                                        },
-                                        {
-                                            "command": "EVENT_CALL_CUSTOM_EVENT",
-                                            "args": {
-                                                "customEventId": "9ceb9172-ebec-4522-becb-bc1eb7986cab",
-                                                "$variable[0]$": "13",
-                                                "$actor[0]$": "2eba69b8-75b0-421e-9896-d9e6f8dbc1ee",
-                                                "$actor[1]$": "2eba69b8-75b0-421e-9896-d9e6f8dbc1ee",
-                                                "$actor[2]$": "2eba69b8-75b0-421e-9896-d9e6f8dbc1ee",
-                                                "$actor[3]$": "2eba69b8-75b0-421e-9896-d9e6f8dbc1ee",
-                                                "$actor[4]$": "2eba69b8-75b0-421e-9896-d9e6f8dbc1ee"
-                                            },
-                                            "id": "fd7f3aef-8fea-45fd-a982-5c9a03b618db"
                                         }
                                     ]
                                 },
@@ -32197,19 +32184,6 @@
                                                 "$variable[0]$": "13"
                                             },
                                             "id": "3c72987e-2786-42cf-b20e-51c04ce8f326"
-                                        },
-                                        {
-                                            "command": "EVENT_CALL_CUSTOM_EVENT",
-                                            "args": {
-                                                "customEventId": "9ceb9172-ebec-4522-becb-bc1eb7986cab",
-                                                "$variable[0]$": "13",
-                                                "$actor[0]$": "2eba69b8-75b0-421e-9896-d9e6f8dbc1ee",
-                                                "$actor[1]$": "2eba69b8-75b0-421e-9896-d9e6f8dbc1ee",
-                                                "$actor[2]$": "2eba69b8-75b0-421e-9896-d9e6f8dbc1ee",
-                                                "$actor[3]$": "2eba69b8-75b0-421e-9896-d9e6f8dbc1ee",
-                                                "$actor[4]$": "2eba69b8-75b0-421e-9896-d9e6f8dbc1ee"
-                                            },
-                                            "id": "2d880c68-0e6a-4765-b46e-2af149f414d4"
                                         }
                                     ]
                                 },
@@ -36035,19 +36009,6 @@
                                                 "$variable[0]$": "13"
                                             },
                                             "id": "04db7da7-3f83-48c2-ac73-290f84401025"
-                                        },
-                                        {
-                                            "command": "EVENT_CALL_CUSTOM_EVENT",
-                                            "args": {
-                                                "customEventId": "9ceb9172-ebec-4522-becb-bc1eb7986cab",
-                                                "$variable[0]$": "13",
-                                                "$actor[0]$": "2eba69b8-75b0-421e-9896-d9e6f8dbc1ee",
-                                                "$actor[1]$": "2eba69b8-75b0-421e-9896-d9e6f8dbc1ee",
-                                                "$actor[2]$": "2eba69b8-75b0-421e-9896-d9e6f8dbc1ee",
-                                                "$actor[3]$": "2eba69b8-75b0-421e-9896-d9e6f8dbc1ee",
-                                                "$actor[4]$": "2eba69b8-75b0-421e-9896-d9e6f8dbc1ee"
-                                            },
-                                            "id": "3cd28397-5a1d-4123-b846-321e9c135e89"
                                         }
                                     ]
                                 },
@@ -79329,8 +79290,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1685,
-        "worldScrollY": 164,
+        "worldScrollX": 1234,
+        "worldScrollY": 201,
         "zoom": 184,
         "customColorsEnabled": true,
         "sgbEnabled": true,
