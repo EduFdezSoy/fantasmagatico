@@ -1444,7 +1444,46 @@
                             "id": "d26c4c82-c250-4d0c-9e4b-6119643ad39a"
                         }
                     ],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "14",
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_MOVE_TO",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "x": {
+                                                "type": "number",
+                                                "value": 11
+                                            },
+                                            "y": {
+                                                "type": "number",
+                                                "value": 22
+                                            },
+                                            "moveType": "diagonal",
+                                            "useCollisions": false
+                                        },
+                                        "id": "50d04a10-f3e1-481d-b55e-14faba170cc5"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "speed": 4
+                                        },
+                                        "id": "d8ea1171-9750-4443-b4c4-2722b86bb876"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "1d121fff-67bc-464e-876f-f2e6e9984c96"
+                        }
+                    ],
                     "updateScript": [
                         {
                             "command": "EVENT_IF_FLAGS_COMPARE",
