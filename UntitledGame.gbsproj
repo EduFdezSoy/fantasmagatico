@@ -20624,8 +20624,8 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "2b2c8fe8-f575-4489-839e-1bf8adb55ae4",
-                    "x": 30,
-                    "y": 5
+                    "x": 34,
+                    "y": 32
                 },
                 {
                     "name": "",
@@ -79394,8 +79394,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1298,
-        "worldScrollY": 1057,
+        "worldScrollX": 664,
+        "worldScrollY": 1305,
         "zoom": 157.5,
         "customColorsEnabled": true,
         "sgbEnabled": true,

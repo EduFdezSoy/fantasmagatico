@@ -36644,7 +36644,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "os visitarás todos \nlos días, ¿verdad \nbonica?"
+                                                            "Nos visitarás todos \nlos días, ¿verdad \nbonica?"
                                                         ],
                                                         "avatarId": ""
                                                     },
@@ -79394,8 +79394,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 832,
-        "worldScrollY": 844,
+        "worldScrollX": 1298,
+        "worldScrollY": 1057,
         "zoom": 157.5,
         "customColorsEnabled": true,
         "sgbEnabled": true,
