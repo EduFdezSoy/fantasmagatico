@@ -284,30 +284,11 @@
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_ACTOR_EMOTE",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "emoteId": "362efd0f-67c7-491a-8b49-482b17b23e32"
-                                        },
-                                        "id": "ac68fe38-d106-4480-9998-8086c17fbc72"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "No te escucha, \nestá llorando."
-                                            ],
-                                            "avatarId": ""
-                                        },
-                                        "id": "49932603-1cc1-4c2e-944b-0b849145aefc"
-                                    }
-                                ],
-                                "false": [
-                                    {
                                         "command": "EVENT_IF_FALSE",
                                         "args": {
                                             "variable": "2",
-                                            "__collapseElse": false
+                                            "__collapseElse": false,
+                                            "__collapse": true
                                         },
                                         "children": {
                                             "true": [
@@ -498,6 +479,26 @@
                                         },
                                         "id": "d02d060a-a3f0-4d9b-be31-16a8218ced04"
                                     }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "No te escucha, \nestá llorando."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "49932603-1cc1-4c2e-944b-0b849145aefc"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "emoteId": "362efd0f-67c7-491a-8b49-482b17b23e32"
+                                        },
+                                        "id": "ac68fe38-d106-4480-9998-8086c17fbc72"
+                                    }
                                 ]
                             },
                             "id": "2c7f962a-ade0-4f37-87fb-d9aa261dfd12"
@@ -596,6 +597,14 @@
                                                     "children": {
                                                         "true": [
                                                             {
+                                                                "command": "EVENT_ACTOR_SET_STATE",
+                                                                "args": {
+                                                                    "actorId": "$self$",
+                                                                    "spriteStateId": "feliz"
+                                                                },
+                                                                "id": "a9d8b607-e821-4ae6-bf14-3f925e92e43e"
+                                                            },
+                                                            {
                                                                 "command": "EVENT_TEXT",
                                                                 "args": {
                                                                     "text": [
@@ -607,7 +616,8 @@
                                                                         "No te preocupes por mí,\n Pepo me cuida.",
                                                                         "Nos vemos, Patutus."
                                                                     ],
-                                                                    "avatarId": ""
+                                                                    "avatarId": "",
+                                                                    "__collapse": false
                                                                 },
                                                                 "id": "f041a1bb-f3b7-4901-bfdd-35cedecc8e4d"
                                                             },
@@ -617,6 +627,22 @@
                                                                     "variable": "23"
                                                                 },
                                                                 "id": "1e2be5a9-874a-4ca6-afc8-c6b267f40820"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_ACTOR_SET_SPRITE",
+                                                                "args": {
+                                                                    "actorId": "89e1a5c9-b8a8-4492-879c-803ff348680d",
+                                                                    "spriteSheetId": "aa027616-3ea4-48d5-81f4-78d9c0d28087"
+                                                                },
+                                                                "id": "f6b714db-17a9-4c48-8f03-5cb11bf667ef"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_ACTOR_EMOTE",
+                                                                "args": {
+                                                                    "actorId": "89e1a5c9-b8a8-4492-879c-803ff348680d",
+                                                                    "emoteId": "e20504d8-3d88-4b71-b6d3-0e291bab970b"
+                                                                },
+                                                                "id": "1bed6e4c-0716-4a89-b88e-2dd88d44d117"
                                                             }
                                                         ],
                                                         "false": [
@@ -21850,7 +21876,7 @@
                                                                 "command": "EVENT_IF_VALUE",
                                                                 "args": {
                                                                     "variable": "17",
-                                                                    "operator": "==",
+                                                                    "operator": ">",
                                                                     "comparator": 7,
                                                                     "__collapseElse": true
                                                                 },
@@ -21996,14 +22022,103 @@
                                             ],
                                             "false": [
                                                 {
-                                                    "command": "EVENT_TEXT",
+                                                    "command": "EVENT_IF_VALUE",
                                                     "args": {
-                                                        "text": [
-                                                            "¡Ya quédatelo, prefiero\ndecir que lo perdí!\n"
-                                                        ],
-                                                        "avatarId": ""
+                                                        "variable": "17",
+                                                        "operator": "==",
+                                                        "comparator": 7,
+                                                        "__collapseElse": false
                                                     },
-                                                    "id": "67a95739-94cc-4cdb-ac85-8822e355d6db"
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "La gata de antes.\n¿Qué quieres?",
+                                                                        "Mmmh… No debería \nhaberte gritado, \nlo siento.",
+                                                                        "Sé que les animales no\nactuáis con maldad,\nenfadarme no sirve\nde nada.",
+                                                                        "Además fue mi culpa. \nFue a mí a quien se le \nvolaron los trozos.",
+                                                                        "En fin. Ya estoy más \ncalmado.",
+                                                                        "No sé si debería irme \nahora...",
+                                                                        "mi madre me preguntará \ndónde estuve si llego \nmás tarde."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "08091649-289d-4910-b9ae-d4fce1bd503e"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Te quedas mirando\na Jaime."
+                                                                    ],
+                                                                    "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516"
+                                                                },
+                                                                "id": "2c332291-d238-4e5e-8408-909d8efcb475"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "...",
+                                                                        "Intentas convencerme\nde que me quede,\n¿verdad?",
+                                                                        "Realmente tienes razón.",
+                                                                        "Es mi hermano. Siempre\nlo ha sido. Y lo echo \nde menos.",
+                                                                        "Que le den a mi madre, \nestoy harto de ella. \nVoy con Álvaro."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "523daf02-eba1-4bf5-ab4a-af42d541dca4"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_INC_VALUE",
+                                                                "args": {
+                                                                    "variable": "17"
+                                                                },
+                                                                "id": "a99239e0-2423-4844-b120-ad1baba4cfee"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_IF_VALUE",
+                                                                "args": {
+                                                                    "variable": "17",
+                                                                    "operator": ">",
+                                                                    "comparator": 7,
+                                                                    "__collapseElse": false
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Que le den a mi madre, \nestoy harto de ella. \nVoy con Álvaro."
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "2b18290f-0053-42cc-8bfe-1f845b526b6b"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "¡Ya quédatelo, prefiero\ndecir que lo perdí!\n"
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "67a95739-94cc-4cdb-ac85-8822e355d6db"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "id": "5b53eb28-cc12-4deb-8331-2aee47401902"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "e1424697-fc85-4dc8-8010-1f48b4f9b14e"
                                                 }
                                             ]
                                         },
@@ -50817,7 +50932,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         },
                                         {
@@ -50830,7 +50945,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         }
                                     ]
@@ -50848,7 +50963,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         },
                                         {
@@ -50861,7 +50976,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         }
                                     ]
@@ -59572,7 +59687,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 1489,
-        "worldScrollY": 1630,
+        "worldScrollY": 1736,
         "zoom": 237,
         "customColorsEnabled": true,
         "sgbEnabled": true,
@@ -59601,9 +59716,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            30,
+            205,
             175,
-            732
+            557
         ],
         "showNavigator": true,
         "defaultFontId": "948c169c-8e4b-491c-a5f0-66898bbf45d9",

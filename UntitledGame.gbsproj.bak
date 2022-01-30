@@ -382,6 +382,75 @@
                                                                     "true": [],
                                                                     "false": [
                                                                         {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Ay Patuquitos.",
+                                                                                    "Es mi Blanca, mira.",
+                                                                                    "Menos mal que me la\nhas traído.",
+                                                                                    "Ya me ha contado que no\npudo visitarme porque\ntuvo un susto con la\ndiabetes.",
+                                                                                    "También me ha dicho que\nno le pasa nada, vamos,\nque solo fue al hospital\nporque su sobrina se\npreocupa mucho, ay.",
+                                                                                    "No te apures por mí,\nya no lloraré, que estoy\ncon mi Blanca."
+                                                                                ],
+                                                                                "avatarId": "",
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "id": "000f4f84-cc7f-4b7f-8846-6b608b86d35c"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_SET_VALUE",
+                                                                            "args": {
+                                                                                "variable": "8",
+                                                                                "value": {
+                                                                                    "type": "number",
+                                                                                    "value": 2
+                                                                                },
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "id": "cac2716d-f98c-403d-8ef0-0565784396c5"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_ACTOR_MOVE_TO",
+                                                                            "args": {
+                                                                                "actorId": "ff62c3d3-4d5d-417c-8663-cb35bcca3d67",
+                                                                                "x": {
+                                                                                    "type": "number",
+                                                                                    "value": 11
+                                                                                },
+                                                                                "y": {
+                                                                                    "type": "number",
+                                                                                    "value": 22
+                                                                                },
+                                                                                "moveType": "horizontal",
+                                                                                "useCollisions": false
+                                                                            },
+                                                                            "id": "29ff9f59-c04b-45fc-8c7f-a6493c897f31"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_CLEAR_FLAGS",
+                                                                            "args": {
+                                                                                "variable": "16",
+                                                                                "flag1": true,
+                                                                                "flag2": false,
+                                                                                "flag3": false,
+                                                                                "flag4": false,
+                                                                                "flag5": false,
+                                                                                "flag6": false,
+                                                                                "flag7": false,
+                                                                                "flag8": false,
+                                                                                "flag9": false,
+                                                                                "flag10": false,
+                                                                                "flag11": false,
+                                                                                "flag12": false,
+                                                                                "flag13": false,
+                                                                                "flag14": false,
+                                                                                "flag15": false,
+                                                                                "flag16": false,
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "id": "bfb91cf7-1d07-4a4b-b505-7aa5b5a19b9b"
+                                                                        },
+                                                                        {
                                                                             "command": "EVENT_SET_FLAGS",
                                                                             "args": {
                                                                                 "variable": "16",
@@ -404,49 +473,6 @@
                                                                                 "__collapse": true
                                                                             },
                                                                             "id": "5dc7e19c-9d3d-4427-b31f-f79acb5a9946"
-                                                                        },
-                                                                        {
-                                                                            "command": "EVENT_TEXT",
-                                                                            "args": {
-                                                                                "text": [
-                                                                                    "Ay Patuquitos.",
-                                                                                    "Es mi Blanca, mira.",
-                                                                                    "Menos mal que me la\nhas traído.",
-                                                                                    "Ya me ha contado que no\npudo visitarme porque\ntuvo un susto con la\ndiabetes.",
-                                                                                    "También me ha dicho que\nno le pasa nada, vamos,\nque solo fue al hospital\nporque su sobrina se\npreocupa mucho, ay.",
-                                                                                    "No te apures por mí,\nya no lloraré, que estoy\ncon mi Blanca."
-                                                                                ],
-                                                                                "avatarId": ""
-                                                                            },
-                                                                            "id": "000f4f84-cc7f-4b7f-8846-6b608b86d35c"
-                                                                        },
-                                                                        {
-                                                                            "command": "EVENT_SET_VALUE",
-                                                                            "args": {
-                                                                                "variable": "8",
-                                                                                "value": {
-                                                                                    "type": "number",
-                                                                                    "value": 2
-                                                                                }
-                                                                            },
-                                                                            "id": "cac2716d-f98c-403d-8ef0-0565784396c5"
-                                                                        },
-                                                                        {
-                                                                            "command": "EVENT_ACTOR_MOVE_TO",
-                                                                            "args": {
-                                                                                "actorId": "ff62c3d3-4d5d-417c-8663-cb35bcca3d67",
-                                                                                "x": {
-                                                                                    "type": "number",
-                                                                                    "value": 11
-                                                                                },
-                                                                                "y": {
-                                                                                    "type": "number",
-                                                                                    "value": 22
-                                                                                },
-                                                                                "moveType": "horizontal",
-                                                                                "useCollisions": false
-                                                                            },
-                                                                            "id": "29ff9f59-c04b-45fc-8c7f-a6493c897f31"
                                                                         }
                                                                     ]
                                                                 },
@@ -1375,6 +1401,52 @@
                                 "false": []
                             },
                             "id": "ecc03a9f-ccad-4cb7-8ed0-9170eda67f11"
+                        },
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "16",
+                                "flag": 1,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_IF_FALSE",
+                                        "args": {
+                                            "variable": "L3",
+                                            "__collapseElse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "L3"
+                                                    },
+                                                    "id": "7973f6d9-9623-47f3-ac7f-7629beb41bf7"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Ay por fin, aquí está\nmi Emilia.",
+                                                            "Menos mal que me has\ntraído tú, yo me\nhabría perdido.",
+                                                            "Voy a contarle por qué\nno vengo desde hace una\nsemanica, que seguro\nque está preocupada."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "f5963d83-6dfa-4cd1-b953-5ec07f4f73dd"
+                                                }
+                                            ],
+                                            "false": []
+                                        },
+                                        "id": "b1ca10ff-4985-4793-87bf-2b5a6818ae59"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "38713733-68f2-4ecd-8891-b6b2c7b3d13a"
                         }
                     ],
                     "hit1Script": [],
@@ -21567,7 +21639,8 @@
                                                         "variable": "L0",
                                                         "operator": "==",
                                                         "comparator": 1,
-                                                        "__collapseElse": true
+                                                        "__collapseElse": true,
+                                                        "__collapse": true
                                                     },
                                                     "children": {
                                                         "true": [
@@ -21626,14 +21699,197 @@
                                 ],
                                 "false": [
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_IF_TRUE",
                                         "args": {
-                                            "text": [
-                                                "¡no quiero ser una\nsábana flotante! ¡Agh!"
-                                            ],
-                                            "avatarId": ""
+                                            "variable": "6",
+                                            "__collapseElse": false
                                         },
-                                        "id": "c1bafc15-dfe8-41ce-b977-b87b66482086"
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "5"
+                                                    },
+                                                    "id": "2caa8c6c-7285-405c-9dcf-d4805b08c505"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Buenas Patu.",
+                                                            "¿Qué tienes ahí?"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "60befe98-8f65-42ae-b240-e2c2c275da66"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Has entregado marco\nde fotos a Álvaro."
+                                                        ],
+                                                        "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516"
+                                                    },
+                                                    "id": "936882e5-07c0-437e-ac04-e91686af6528"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Esta niña... me suena.",
+                                                            "¿Por qué me das esto?"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "7b0029b6-06b7-4d31-8086-d7bcb57ce1c8"
+                                                },
+                                                {
+                                                    "command": "EVENT_IF_VALUE",
+                                                    "args": {
+                                                        "variable": "17",
+                                                        "operator": "==",
+                                                        "comparator": 6,
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "¿Eh?\n¿Me traes algo más?"
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "e765e613-b256-43d1-8f25-ac7606a7283c"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Has entregado foto\nrecompuesta a Álvaro."
+                                                                    ],
+                                                                    "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516"
+                                                                },
+                                                                "id": "211782b9-3267-44fc-93d9-48e424620638"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Espera."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "11386c00-ab50-414f-a305-30d6185dfca3"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_ACTOR_EMOTE",
+                                                                "args": {
+                                                                    "actorId": "$self$",
+                                                                    "emoteId": "c8d5eadd-dced-43df-8367-1e4d9bfc7923"
+                                                                },
+                                                                "id": "72632189-5dd8-4fc9-9661-8246b4fbc3ef"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "! ! ! ! !",
+                                                                        "SOY YO."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "6bf095c8-5782-45eb-bddd-e7f067a928b4"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_ACTOR_SET_SPRITE",
+                                                                "args": {
+                                                                    "actorId": "$self$",
+                                                                    "spriteSheetId": "ba344503-2082-43a4-8cba-67110850e13d"
+                                                                },
+                                                                "id": "0074944e-fe21-4429-9286-7c8d5d902253"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "¡He vuelto, Patucos,\nsoy yo!",
+                                                                        "¡Por fin!",
+                                                                        "¡Bien bien bieeeen!",
+                                                                        "¡Y \"la niña\" de esa foto\nnunca fue una niña!",
+                                                                        "Siempre fui yo.",
+                                                                        "Aunque no haya llegado\nhasta aquí, con que\nhaya cruzado la \npuerta del cementerio\nme hace feliz.",
+                                                                        "Él siempre fue el único\nque me apoyó.",
+                                                                        "Por mucho que mi madre\nse enfadara.",
+                                                                        "De hecho estoy seguro\nde que fue ella quien\nrompió mi foto.",
+                                                                        "Descuida Patu,\nya no me afecta.",
+                                                                        "Esa señora es idiota,\npor decir poco.\nNunca fue mi familia.",
+                                                                        "No le debo ningún\nrespeto solo por\nhaberme parido.",
+                                                                        "Y mi padre, bueno.\nComo si no existiera.",
+                                                                        "No sé qué es peor,\n¡jajaja!",
+                                                                        "De verdad, estoy bien.\nY ahora que me\nrecuerdo, mejor aún.",
+                                                                        "Eres genial, Patucos.\nOjalá me dejaras\nabrazarte, pero no\nte gusta, ¡jajaja!"
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "429bed5c-a07b-4344-817d-830a8223037b"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_INC_VALUE",
+                                                                "args": {
+                                                                    "variable": "17"
+                                                                },
+                                                                "id": "fa19e670-43a6-483b-a891-713e94f9f589"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_IF_VALUE",
+                                                                "args": {
+                                                                    "variable": "17",
+                                                                    "operator": ">",
+                                                                    "comparator": 7,
+                                                                    "__collapseElse": true
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Eres genial, Patucos.\nOjalá me dejaras\nabrazarte, pero no\nte gusta, ¡jajaja!"
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "cd780277-0f6a-4c4f-a51a-bf643745fd0e"
+                                                                        }
+                                                                    ],
+                                                                    "false": []
+                                                                },
+                                                                "id": "6b99666a-35e7-4749-b413-daf85eaab164"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "0fcac335-331e-4969-8173-45fb5106d062"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "¡no quiero ser una\nsábana flotante! ¡Agh!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "c1bafc15-dfe8-41ce-b977-b87b66482086"
+                                                }
+                                            ]
+                                        },
+                                        "id": "d6236d2b-8ea7-4ee8-91f4-8f110b15132b"
                                     }
                                 ]
                             },
@@ -21740,14 +21996,103 @@
                                             ],
                                             "false": [
                                                 {
-                                                    "command": "EVENT_TEXT",
+                                                    "command": "EVENT_IF_VALUE",
                                                     "args": {
-                                                        "text": [
-                                                            "¡Ya quédatelo, prefiero\ndecir que lo perdí!\n"
-                                                        ],
-                                                        "avatarId": ""
+                                                        "variable": "17",
+                                                        "operator": "==",
+                                                        "comparator": 7,
+                                                        "__collapseElse": false
                                                     },
-                                                    "id": "67a95739-94cc-4cdb-ac85-8822e355d6db"
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "La gata de antes.\n¿Qué quieres?",
+                                                                        "Mmmh… No debería \nhaberte gritado, \nlo siento.",
+                                                                        "Sé que les animales no\nactuáis con maldad,\nenfadarme no sirve\nde nada.",
+                                                                        "Además fue mi culpa. \nFue a mí a quien se le \nvolaron los trozos.",
+                                                                        "En fin. Ya estoy más \ncalmado.",
+                                                                        "No sé si debería irme \nahora...",
+                                                                        "mi madre me preguntará \ndónde estuve si llego \nmás tarde."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "08091649-289d-4910-b9ae-d4fce1bd503e"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Te quedas mirando\na Jaime."
+                                                                    ],
+                                                                    "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516"
+                                                                },
+                                                                "id": "2c332291-d238-4e5e-8408-909d8efcb475"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "...",
+                                                                        "Intentas convencerme\nde que me quede,\n¿verdad?",
+                                                                        "Realmente tienes razón.",
+                                                                        "Es mi hermano. Siempre\nlo ha sido. Y lo echo \nde menos.",
+                                                                        "Que le den a mi madre, \nestoy harto de ella. \nVoy con Álvaro."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "523daf02-eba1-4bf5-ab4a-af42d541dca4"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_INC_VALUE",
+                                                                "args": {
+                                                                    "variable": "17"
+                                                                },
+                                                                "id": "a99239e0-2423-4844-b120-ad1baba4cfee"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_IF_VALUE",
+                                                                "args": {
+                                                                    "variable": "17",
+                                                                    "operator": ">",
+                                                                    "comparator": 7,
+                                                                    "__collapseElse": false
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Que le den a mi madre, \nestoy harto de ella. \nVoy con Álvaro."
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "2b18290f-0053-42cc-8bfe-1f845b526b6b"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "¡Ya quédatelo, prefiero\ndecir que lo perdí!\n"
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "67a95739-94cc-4cdb-ac85-8822e355d6db"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "id": "5b53eb28-cc12-4deb-8331-2aee47401902"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "e1424697-fc85-4dc8-8010-1f48b4f9b14e"
                                                 }
                                             ]
                                         },
@@ -59290,6 +59635,14 @@
         {
             "id": "ff62c3d3-4d5d-417c-8663-cb35bcca3d67__L2",
             "name": "y"
+        },
+        {
+            "id": "17",
+            "name": "piezas foto"
+        },
+        {
+            "id": "ff62c3d3-4d5d-417c-8663-cb35bcca3d67__L3",
+            "name": "dialogo 2"
         }
     ],
     "engineFieldValues": [
@@ -59307,8 +59660,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1158,
-        "worldScrollY": 1725,
+        "worldScrollX": 1489,
+        "worldScrollY": 2372,
         "zoom": 237,
         "customColorsEnabled": true,
         "sgbEnabled": true,
