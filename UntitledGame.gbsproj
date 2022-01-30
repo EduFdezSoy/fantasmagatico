@@ -385,7 +385,7 @@
                                                                             "command": "EVENT_SET_FLAGS",
                                                                             "args": {
                                                                                 "variable": "16",
-                                                                                "flag1": true,
+                                                                                "flag1": false,
                                                                                 "flag2": true,
                                                                                 "flag3": false,
                                                                                 "flag4": false,
@@ -404,6 +404,49 @@
                                                                                 "__collapse": true
                                                                             },
                                                                             "id": "5dc7e19c-9d3d-4427-b31f-f79acb5a9946"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Ay Patuquitos.",
+                                                                                    "Es mi Blanca, mira.",
+                                                                                    "Menos mal que me la\nhas traído.",
+                                                                                    "Ya me ha contado que no\npudo visitarme porque\ntuvo un susto con la\ndiabetes.",
+                                                                                    "También me ha dicho que\nno le pasa nada, vamos,\nque solo fue al hospital\nporque su sobrina se\npreocupa mucho, ay.",
+                                                                                    "No te apures por mí,\nya no lloraré, que estoy\ncon mi Blanca."
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "000f4f84-cc7f-4b7f-8846-6b608b86d35c"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_SET_VALUE",
+                                                                            "args": {
+                                                                                "variable": "8",
+                                                                                "value": {
+                                                                                    "type": "number",
+                                                                                    "value": 2
+                                                                                }
+                                                                            },
+                                                                            "id": "cac2716d-f98c-403d-8ef0-0565784396c5"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_ACTOR_MOVE_TO",
+                                                                            "args": {
+                                                                                "actorId": "ff62c3d3-4d5d-417c-8663-cb35bcca3d67",
+                                                                                "x": {
+                                                                                    "type": "number",
+                                                                                    "value": 11
+                                                                                },
+                                                                                "y": {
+                                                                                    "type": "number",
+                                                                                    "value": 22
+                                                                                },
+                                                                                "moveType": "horizontal",
+                                                                                "useCollisions": false
+                                                                            },
+                                                                            "id": "29ff9f59-c04b-45fc-8c7f-a6493c897f31"
                                                                         }
                                                                     ]
                                                                 },
@@ -59264,8 +59307,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1289,
-        "worldScrollY": 2332,
+        "worldScrollX": 1158,
+        "worldScrollY": 1725,
         "zoom": 237,
         "customColorsEnabled": true,
         "sgbEnabled": true,

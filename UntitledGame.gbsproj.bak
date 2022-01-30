@@ -363,14 +363,67 @@
                                             ],
                                             "false": [
                                                 {
-                                                    "command": "EVENT_TEXT",
+                                                    "command": "EVENT_IF_FLAGS_COMPARE",
                                                     "args": {
-                                                        "text": [
-                                                            "El medallón...\nAayyy... ay..."
-                                                        ],
-                                                        "avatarId": ""
+                                                        "variable": "16",
+                                                        "flag": 0,
+                                                        "__collapseElse": false
                                                     },
-                                                    "id": "baa2acac-558f-4557-8f4d-f9f90f0df052"
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_IF_FLAGS_COMPARE",
+                                                                "args": {
+                                                                    "variable": "16",
+                                                                    "flag": 1,
+                                                                    "__collapseElse": false
+                                                                },
+                                                                "children": {
+                                                                    "true": [],
+                                                                    "false": [
+                                                                        {
+                                                                            "command": "EVENT_SET_FLAGS",
+                                                                            "args": {
+                                                                                "variable": "16",
+                                                                                "flag1": true,
+                                                                                "flag2": true,
+                                                                                "flag3": false,
+                                                                                "flag4": false,
+                                                                                "flag5": false,
+                                                                                "flag6": false,
+                                                                                "flag7": false,
+                                                                                "flag8": false,
+                                                                                "flag9": false,
+                                                                                "flag10": false,
+                                                                                "flag11": false,
+                                                                                "flag12": false,
+                                                                                "flag13": false,
+                                                                                "flag14": false,
+                                                                                "flag15": false,
+                                                                                "flag16": false,
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "id": "5dc7e19c-9d3d-4427-b31f-f79acb5a9946"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "id": "25e99281-c799-41e9-878a-3411064ac93b"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "El medallón...\nAayyy... ay..."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "baa2acac-558f-4557-8f4d-f9f90f0df052"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "80baf7d3-7b35-449d-b24f-6aa3bd3535c1"
                                                 }
                                             ]
                                         },
@@ -21699,12 +21752,35 @@
             ],
             "script": [
                 {
-                    "id": "79fb61de-6aa3-4442-a301-611c43915b4c",
-                    "command": "EVENT_MUSIC_PLAY",
+                    "command": "EVENT_IF_TRUE",
                     "args": {
-                        "musicId": "9aac47ff-51d7-48bf-9f15-1ce01b3872a4",
-                        "loop": true
-                    }
+                        "variable": "13",
+                        "__collapseElse": false,
+                        "__collapse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "1c2d75f2-85e1-4974-bc7a-627e4e71ec8b",
+                                "command": "EVENT_MUSIC_PLAY",
+                                "args": {
+                                    "musicId": "9bdad4f0-8a07-470b-bfe0-d7a163fd6fe9",
+                                    "loop": true
+                                }
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_MUSIC_PLAY",
+                                "args": {
+                                    "musicId": "933ff454-2277-4c78-9c13-1da24b392668",
+                                    "loop": true
+                                },
+                                "id": "6748c2b0-704b-4b5b-b4c1-0e2903c72c01"
+                            }
+                        ]
+                    },
+                    "id": "cdd1c092-1ce0-4de3-ba9d-30b550e79ddf"
                 },
                 {
                     "id": "91b8408f-f2f6-4a04-8f45-7aae9a1934e7",
@@ -31762,6 +31838,24 @@
             "imageWidth": 320,
             "imageHeight": 144,
             "filename": "mausoleo_catacumbas2.png"
+        },
+        {
+            "id": "98c26d49-7e35-4779-8bd1-3cbeda763159",
+            "name": "mausoleo_catacumbas3",
+            "width": 40,
+            "height": 18,
+            "imageWidth": 320,
+            "imageHeight": 144,
+            "filename": "mausoleo_catacumbas3.png"
+        },
+        {
+            "id": "6ec9c1ba-38ee-4dff-9efc-730e048c8ac3",
+            "name": "mausoleo_catacumbas4",
+            "width": 40,
+            "height": 18,
+            "imageWidth": 320,
+            "imageHeight": 144,
+            "filename": "mausoleo_catacumbas4.png"
         },
         {
             "id": "b49ea566-b022-478c-979d-ec3ee255fdc5",
@@ -56512,7 +56606,7 @@
             "numFrames": 14,
             "type": "animated",
             "filename": "rocas.png",
-            "checksum": "e8afc776df0c420a4e6ad4c210f8885647a2f985",
+            "checksum": "90f1f07266ee3b70b16969cfbe0720ea025c472a",
             "width": 224,
             "height": 224,
             "states": [
@@ -59170,8 +59264,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1070,
-        "worldScrollY": 1651,
+        "worldScrollX": 1289,
+        "worldScrollY": 2332,
         "zoom": 237,
         "customColorsEnabled": true,
         "sgbEnabled": true,
