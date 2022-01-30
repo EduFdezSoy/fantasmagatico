@@ -16483,8 +16483,13 @@
             ],
             "spritePaletteIds": [
                 "",
-                "default-sprite",
-                "default-bg-1"
+                "default-bg-3",
+                "cc513c45-191f-4ba3-93da-5d0402277150",
+                "585787f6-4304-4bee-98b4-1f124bda0779",
+                "d7b91466-9820-4ded-b70f-13b062d2a9a3",
+                "05fc8d58-4c6a-4923-bf3b-58155d6e44bf",
+                "dcf35a76-012a-4530-a5ca-e2ded60e6dcd",
+                "a4420b60-d2c1-4b6a-8b43-9fa12b7d613d"
             ],
             "collisions": [
                 15,
@@ -61875,7 +61880,7 @@
         },
         {
             "id": "003bf001-b516-4e73-9f56-989b1e1526ae",
-            "name": "binky_calaca",
+            "name": "calaca binky",
             "numFrames": 1,
             "type": "static",
             "filename": "binky_calaca.png",
@@ -61904,7 +61909,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -61917,7 +61922,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -63531,7 +63536,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 3,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -63544,7 +63549,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 3,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -65518,7 +65523,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 4,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -65531,7 +65536,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 4,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -74059,7 +74064,7 @@
         },
         {
             "id": "10bc2028-99fb-450c-b6e2-701760484585",
-            "name": "paula_calaca",
+            "name": "calaca paula",
             "numFrames": 1,
             "type": "static",
             "filename": "paula_calaca.png",
@@ -74088,7 +74093,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 7,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -74101,7 +74106,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 7,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -75936,7 +75941,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -75949,7 +75954,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -78010,20 +78015,30 @@
             "id": "05fc8d58-4c6a-4923-bf3b-58155d6e44bf",
             "name": "Calaca Poli",
             "colors": [
-                "A8A018",
-                "B0F088",
-                "509878",
-                "202850"
+                "F8F860",
+                "D8D8D8",
+                "D8D8D8",
+                "A09028"
             ]
         },
         {
             "id": "585787f6-4304-4bee-98b4-1f124bda0779",
-            "name": "Palette 28",
+            "name": "Calaca Edu",
             "colors": [
-                "E8F8E0",
-                "B0F088",
-                "509878",
-                "202850"
+                "F8C0F0",
+                "904078",
+                "904078",
+                "480038"
+            ]
+        },
+        {
+            "id": "a4420b60-d2c1-4b6a-8b43-9fa12b7d613d",
+            "name": "Calaca Paula",
+            "colors": [
+                "F8C0B0",
+                "D86828",
+                "D86828",
+                "803008"
             ]
         }
     ],
@@ -79298,8 +79313,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1504,
-        "worldScrollY": 685,
+        "worldScrollX": 1462,
+        "worldScrollY": 660,
         "zoom": 184,
         "customColorsEnabled": true,
         "sgbEnabled": true,
