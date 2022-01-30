@@ -11861,7 +11861,7 @@
                     "id": "19f14f5d-7925-459a-992c-ab6cb69b59f8",
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "a48b4a96-9a5a-4511-b38a-98d56dd996ba",
+                        "musicId": "9bdad4f0-8a07-470b-bfe0-d7a163fd6fe9",
                         "loop": true
                     }
                 },
@@ -22496,8 +22496,9 @@
                     "id": "5c0ac20b-bd66-468d-9d51-ac79ba8bbe53",
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "a48b4a96-9a5a-4511-b38a-98d56dd996ba",
-                        "loop": true
+                        "musicId": "9bdad4f0-8a07-470b-bfe0-d7a163fd6fe9",
+                        "loop": true,
+                        "__comment": true
                     }
                 },
                 {
@@ -23073,8 +23074,9 @@
                     "id": "f86749aa-f505-48a8-962f-2013afbdade1",
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "a48b4a96-9a5a-4511-b38a-98d56dd996ba",
-                        "loop": true
+                        "musicId": "9bdad4f0-8a07-470b-bfe0-d7a163fd6fe9",
+                        "loop": true,
+                        "__comment": true
                     }
                 },
                 {
@@ -78962,8 +78964,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1745,
-        "worldScrollY": 2970,
+        "worldScrollX": 693,
+        "worldScrollY": 1875,
         "zoom": 290,
         "customColorsEnabled": true,
         "sgbEnabled": true,
