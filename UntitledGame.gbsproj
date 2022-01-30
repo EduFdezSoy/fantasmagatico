@@ -689,11 +689,9 @@
                                                     "children": {
                                                         "true": [
                                                             {
-                                                                "command": "EVENT_IF_VALUE",
+                                                                "command": "EVENT_IF_TRUE",
                                                                 "args": {
-                                                                    "variable": "7",
-                                                                    "operator": ">=",
-                                                                    "comparator": 1,
+                                                                    "variable": "25",
                                                                     "__collapseElse": false
                                                                 },
                                                                 "children": {
@@ -737,7 +735,7 @@
                                                                         }
                                                                     ]
                                                                 },
-                                                                "id": "de2eb8a5-fced-4c5d-85ff-b7d347326f8c"
+                                                                "id": "8467729e-6e8f-4a0d-954b-3c0d218b977e"
                                                             },
                                                             {
                                                                 "command": "EVENT_SET_TRUE",
@@ -1313,6 +1311,13 @@
                                         },
                                         "children": {
                                             "true": [
+                                                {
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "25"
+                                                    },
+                                                    "id": "805631d2-7c4a-476c-a7e4-1c6d77220820"
+                                                },
                                                 {
                                                     "command": "EVENT_TEXT",
                                                     "args": {
@@ -36475,8 +36480,8 @@
             ],
             "autoFadeSpeed": 1,
             "id": "fa79e3a4-49b2-4d07-8fb5-f0789909b520",
-            "x": 985.7404580152672,
-            "y": 748.3358778625953,
+            "x": 973.0420453168545,
+            "y": 740.7168302435476,
             "actors": [
                 {
                     "name": "benito fantasma",
@@ -42242,8 +42247,8 @@
             ],
             "autoFadeSpeed": 1,
             "id": "e6fa990e-7fee-43ae-9048-67ecd41e68ce",
-            "x": 988.793893129771,
-            "y": 1092.6106870229007,
+            "x": 974.1907185265964,
+            "y": 1064.039258451472,
             "actors": [
                 {
                     "name": "chispa fantasma",
@@ -79335,6 +79340,10 @@
         {
             "id": "7b400691-d5a8-4817-b15b-c104c14c84db__L1",
             "name": "dialogo cuadro"
+        },
+        {
+            "id": "25",
+            "name": "hablaste con pepo"
         }
     ],
     "engineFieldValues": [
@@ -79352,8 +79361,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1187,
-        "worldScrollY": 1346,
+        "worldScrollX": 914,
+        "worldScrollY": 1100,
         "zoom": 157.5,
         "customColorsEnabled": true,
         "sgbEnabled": true,
