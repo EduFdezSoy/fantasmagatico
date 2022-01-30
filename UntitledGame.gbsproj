@@ -28125,6 +28125,28 @@
                         }
                     ],
                     "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "4d56812a-5536-46e8-99e7-b57399bac33d",
+                    "x": 39,
+                    "y": 0,
+                    "width": 1,
+                    "height": 7,
+                    "script": [
+                        {
+                            "id": "51aac94d-a12a-4028-bcd0-c79b145400c3",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "x": 2,
+                                "y": 3,
+                                "direction": "right",
+                                "sceneId": "f8f027ef-b818-4038-9eda-0ac477facb41",
+                                "fadeSpeed": "2"
+                            }
+                        }
+                    ],
+                    "leaveScript": []
                 }
             ],
             "script": [
@@ -79307,8 +79329,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 842,
-        "worldScrollY": 304,
+        "worldScrollX": 1685,
+        "worldScrollY": 164,
         "zoom": 184,
         "customColorsEnabled": true,
         "sgbEnabled": true,
