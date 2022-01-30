@@ -19993,7 +19993,30 @@
                             "id": "e9f9a2f4-be03-48fc-bb88-52ad20f30172"
                         }
                     ],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "19",
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_SPRITE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "spriteSheetId": "ba344503-2082-43a4-8cba-67110850e13d",
+                                            "__collapse": false
+                                        },
+                                        "id": "5c524a9b-0be1-4330-af1f-3e0389f4ee01"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "17a916a0-d58a-4967-b020-d291bcb33564"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -78903,8 +78926,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 547,
-        "worldScrollY": 2302,
+        "worldScrollX": 1577,
+        "worldScrollY": 3027,
         "zoom": 290,
         "customColorsEnabled": true,
         "sgbEnabled": true,

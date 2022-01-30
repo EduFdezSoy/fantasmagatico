@@ -19782,42 +19782,73 @@
                                         "children": {
                                             "true": [
                                                 {
+                                                    "command": "EVENT_IF_FALSE",
+                                                    "args": {
+                                                        "variable": "L1",
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Buenas Patu.",
+                                                                        "¿Qué tienes ahí?"
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "60befe98-8f65-42ae-b240-e2c2c275da66"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Has entregado marco\nde fotos a Álvaro."
+                                                                    ],
+                                                                    "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516"
+                                                                },
+                                                                "id": "936882e5-07c0-437e-ac04-e91686af6528"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "¿Por qué me das esto?"
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "7b0029b6-06b7-4d31-8086-d7bcb57ce1c8"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_SET_TRUE",
+                                                                "args": {
+                                                                    "variable": "L1"
+                                                                },
+                                                                "id": "3b94b90a-7f68-4952-90a4-e2824124ba9d"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "¿Por qué me das esto?"
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "53fd0664-0e48-462b-8b51-42fd95aeb05a"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "da1d631d-91cd-4166-b613-ecdfbf7e6218"
+                                                },
+                                                {
                                                     "command": "EVENT_SET_TRUE",
                                                     "args": {
                                                         "variable": "5"
                                                     },
                                                     "id": "2caa8c6c-7285-405c-9dcf-d4805b08c505"
-                                                },
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "Buenas Patu.",
-                                                            "¿Qué tienes ahí?"
-                                                        ],
-                                                        "avatarId": ""
-                                                    },
-                                                    "id": "60befe98-8f65-42ae-b240-e2c2c275da66"
-                                                },
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "Has entregado marco\nde fotos a Álvaro."
-                                                        ],
-                                                        "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516"
-                                                    },
-                                                    "id": "936882e5-07c0-437e-ac04-e91686af6528"
-                                                },
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "¿Por qué me das esto?"
-                                                        ],
-                                                        "avatarId": ""
-                                                    },
-                                                    "id": "7b0029b6-06b7-4d31-8086-d7bcb57ce1c8"
                                                 },
                                                 {
                                                     "command": "EVENT_SET_TRUE",
@@ -19832,7 +19863,8 @@
                                                         "variable": "17",
                                                         "operator": ">=",
                                                         "comparator": 6,
-                                                        "__collapseElse": false
+                                                        "__collapseElse": false,
+                                                        "__collapse": false
                                                     },
                                                     "children": {
                                                         "true": [
@@ -78909,6 +78941,10 @@
         {
             "id": "d91d5695-d276-40a0-8ba7-1f7b816d83b1__L0",
             "name": "dialogo fin"
+        },
+        {
+            "id": "7b400691-d5a8-4817-b15b-c104c14c84db__L1",
+            "name": "dialogo cuadro"
         }
     ],
     "engineFieldValues": [
@@ -78926,8 +78962,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1577,
-        "worldScrollY": 3027,
+        "worldScrollX": 1745,
+        "worldScrollY": 2970,
         "zoom": 290,
         "customColorsEnabled": true,
         "sgbEnabled": true,
