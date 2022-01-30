@@ -658,29 +658,55 @@
                                                     "children": {
                                                         "true": [
                                                             {
-                                                                "command": "EVENT_ACTOR_SET_STATE",
+                                                                "command": "EVENT_IF_VALUE",
                                                                 "args": {
-                                                                    "actorId": "$self$",
-                                                                    "spriteStateId": "feliz"
+                                                                    "variable": "7",
+                                                                    "operator": ">=",
+                                                                    "comparator": 1,
+                                                                    "__collapseElse": false
                                                                 },
-                                                                "id": "a9d8b607-e821-4ae6-bf14-3f925e92e43e"
-                                                            },
-                                                            {
-                                                                "command": "EVENT_TEXT",
-                                                                "args": {
-                                                                    "text": [
-                                                                        "¡Patus! ¡Has venido \ncon Pepo!",
-                                                                        "Y traéis el frisbee,\n¡qué bien!",
-                                                                        "¿Lo tenía Chispa?\nNo sé por qué me \nsorprendo, ¡jajaja!",
-                                                                        "Qué suerte tenéis les \nanimales de poder \nmoveros aunque estéis \nun poco muertes.",
-                                                                        "En fin, bien está lo que\nbien acaba, y yo estoy \nmuy bien con vosotres.",
-                                                                        "No te preocupes por mí,\n Pepo me cuida.",
-                                                                        "Nos vemos, Patutus."
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "command": "EVENT_ACTOR_SET_STATE",
+                                                                            "args": {
+                                                                                "actorId": "$self$",
+                                                                                "spriteStateId": "feliz"
+                                                                            },
+                                                                            "id": "a9d8b607-e821-4ae6-bf14-3f925e92e43e"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "¡Patus! ¡Has venido \ncon Pepo!",
+                                                                                    "Y traéis el frisbee,\n¡qué bien!",
+                                                                                    "¿Lo había escondido \nChispa? No sé por qué\nme sorprendo, ¡jajaja!",
+                                                                                    "Qué suerte tenéis les \nanimales de poder \nmoveros aunque estéis \nun poco muertes.",
+                                                                                    "En fin, bien está lo que\nbien acaba, y yo estoy \nmuy bien con vosotres.",
+                                                                                    "No te preocupes por mí,\n Pepo me cuida.",
+                                                                                    "Nos vemos, Patutus."
+                                                                                ],
+                                                                                "avatarId": "",
+                                                                                "__collapse": false
+                                                                            },
+                                                                            "id": "f041a1bb-f3b7-4901-bfdd-35cedecc8e4d"
+                                                                        }
                                                                     ],
-                                                                    "avatarId": "",
-                                                                    "__collapse": false
+                                                                    "false": [
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Echo de menos a\nPepo..."
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "a746ed71-5a90-4cb5-bf0b-06b5e4ebc885"
+                                                                        }
+                                                                    ]
                                                                 },
-                                                                "id": "f041a1bb-f3b7-4901-bfdd-35cedecc8e4d"
+                                                                "id": "de2eb8a5-fced-4c5d-85ff-b7d347326f8c"
                                                             },
                                                             {
                                                                 "command": "EVENT_SET_TRUE",
@@ -741,7 +767,31 @@
                             "id": "c8b37ace-a985-4544-a633-5f7a70c931ae"
                         }
                     ],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "7",
+                                "operator": ">=",
+                                "comparator": 1,
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "spriteStateId": "feliz"
+                                        },
+                                        "id": "a6435382-674a-4e8c-b20d-201bf692c387"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "16e9ebb4-e4ef-45b1-9024-c3faf1757590"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -79208,8 +79258,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1101,
-        "worldScrollY": 1728,
+        "worldScrollX": 1042,
+        "worldScrollY": 1183,
         "zoom": 184,
         "customColorsEnabled": true,
         "sgbEnabled": true,
