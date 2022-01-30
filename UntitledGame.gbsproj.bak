@@ -1312,29 +1312,53 @@
                                         "children": {
                                             "true": [
                                                 {
-                                                    "command": "EVENT_SET_TRUE",
+                                                    "command": "EVENT_IF_TRUE",
                                                     "args": {
-                                                        "variable": "25"
+                                                        "variable": "25",
+                                                        "__collapseElse": false
                                                     },
-                                                    "id": "805631d2-7c4a-476c-a7e4-1c6d77220820"
-                                                },
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "Ah. Hola otra vez.",
-                                                            "¿Hmm?",
-                                                            "Espera... ese es mi\nfrisbee.",
-                                                            "¿Dónde estaba?",
-                                                            "Hacía días que no lo\nveía cuando vengo a\nvisitarle.",
-                                                            "Bueno, no importa.",
-                                                            "Tampoco es la primera\nvez que desaparece.",
-                                                            "Oye, ¿quieres venir a\ndonde está elle conmigo?",
-                                                            "La única cosa que no\nme da pereza hacer es\nvenir para volverle\na ver."
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "*bosteza*"
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "9f4a9b50-22b3-4ee7-bde2-0785735030d9"
+                                                            }
                                                         ],
-                                                        "avatarId": ""
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_SET_TRUE",
+                                                                "args": {
+                                                                    "variable": "25"
+                                                                },
+                                                                "id": "805631d2-7c4a-476c-a7e4-1c6d77220820"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Ah. Hola otra vez.",
+                                                                        "¿Hmm?",
+                                                                        "Espera... ese es mi\nfrisbee.",
+                                                                        "¿Dónde estaba?",
+                                                                        "Hacía días que no lo\nveía cuando vengo a\nvisitarle.",
+                                                                        "Bueno, no importa.",
+                                                                        "Tampoco es la primera\nvez que desaparece.",
+                                                                        "Oye, ¿quieres venir a\ndonde está elle conmigo?",
+                                                                        "La única cosa que no\nme da pereza hacer es\nvenir para volverle\na ver."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "cea56600-003a-4b93-9b74-2f20fdc1e7ca"
+                                                            }
+                                                        ]
                                                     },
-                                                    "id": "cea56600-003a-4b93-9b74-2f20fdc1e7ca"
+                                                    "id": "7ce95402-2012-4029-a54e-2c79b22d51d7"
                                                 },
                                                 {
                                                     "command": "EVENT_TEXT",
