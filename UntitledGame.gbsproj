@@ -720,6 +720,29 @@
                                                                                 "__collapse": false
                                                                             },
                                                                             "id": "f041a1bb-f3b7-4901-bfdd-35cedecc8e4d"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_SET_TRUE",
+                                                                            "args": {
+                                                                                "variable": "23"
+                                                                            },
+                                                                            "id": "1e2be5a9-874a-4ca6-afc8-c6b267f40820"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_ACTOR_SET_SPRITE",
+                                                                            "args": {
+                                                                                "actorId": "89e1a5c9-b8a8-4492-879c-803ff348680d",
+                                                                                "spriteSheetId": "aa027616-3ea4-48d5-81f4-78d9c0d28087"
+                                                                            },
+                                                                            "id": "f6b714db-17a9-4c48-8f03-5cb11bf667ef"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_ACTOR_EMOTE",
+                                                                            "args": {
+                                                                                "actorId": "89e1a5c9-b8a8-4492-879c-803ff348680d",
+                                                                                "emoteId": "e20504d8-3d88-4b71-b6d3-0e291bab970b"
+                                                                            },
+                                                                            "id": "1bed6e4c-0716-4a89-b88e-2dd88d44d117"
                                                                         }
                                                                     ],
                                                                     "false": [
@@ -727,7 +750,7 @@
                                                                             "command": "EVENT_TEXT",
                                                                             "args": {
                                                                                 "text": [
-                                                                                    "Echo de menos a\nPepo..."
+                                                                                    "Echo de menos a\nPepo.."
                                                                                 ],
                                                                                 "avatarId": ""
                                                                             },
@@ -736,29 +759,6 @@
                                                                     ]
                                                                 },
                                                                 "id": "8467729e-6e8f-4a0d-954b-3c0d218b977e"
-                                                            },
-                                                            {
-                                                                "command": "EVENT_SET_TRUE",
-                                                                "args": {
-                                                                    "variable": "23"
-                                                                },
-                                                                "id": "1e2be5a9-874a-4ca6-afc8-c6b267f40820"
-                                                            },
-                                                            {
-                                                                "command": "EVENT_ACTOR_SET_SPRITE",
-                                                                "args": {
-                                                                    "actorId": "89e1a5c9-b8a8-4492-879c-803ff348680d",
-                                                                    "spriteSheetId": "aa027616-3ea4-48d5-81f4-78d9c0d28087"
-                                                                },
-                                                                "id": "f6b714db-17a9-4c48-8f03-5cb11bf667ef"
-                                                            },
-                                                            {
-                                                                "command": "EVENT_ACTOR_EMOTE",
-                                                                "args": {
-                                                                    "actorId": "89e1a5c9-b8a8-4492-879c-803ff348680d",
-                                                                    "emoteId": "e20504d8-3d88-4b71-b6d3-0e291bab970b"
-                                                                },
-                                                                "id": "1bed6e4c-0716-4a89-b88e-2dd88d44d117"
                                                             }
                                                         ],
                                                         "false": [
@@ -79370,8 +79370,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1280,
-        "worldScrollY": 1052,
+        "worldScrollX": 832,
+        "worldScrollY": 844,
         "zoom": 157.5,
         "customColorsEnabled": true,
         "sgbEnabled": true,
@@ -79400,9 +79400,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            203,
-            174,
-            560
+            202,
+            173,
+            562
         ],
         "showNavigator": true,
         "defaultFontId": "948c169c-8e4b-491c-a5f0-66898bbf45d9",
