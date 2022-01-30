@@ -1348,14 +1348,38 @@
                                         "children": {
                                             "true": [
                                                 {
-                                                    "command": "EVENT_TEXT",
+                                                    "command": "EVENT_IF_TRUE",
                                                     "args": {
-                                                        "text": [
-                                                            "Se lo tenemos que\ndevolver a Emilia, venga."
-                                                        ],
-                                                        "avatarId": ""
+                                                        "variable": "14",
+                                                        "__collapseElse": false
                                                     },
-                                                    "id": "2fb62778-84d8-4c6a-a0ed-6c3ce6e92cc6"
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Menos mal que me has\ntraído tú, yo me\nhabría perdido."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "a965f91e-6ee2-4585-8ec3-45076b0a5646"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Se lo tenemos que\ndevolver a Emilia, venga."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "2fb62778-84d8-4c6a-a0ed-6c3ce6e92cc6"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "6ce6224e-c526-4243-bb2f-7a198fe65719"
                                                 }
                                             ],
                                             "false": [
@@ -79056,7 +79080,7 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1057,
+        "worldScrollX": 1055,
         "worldScrollY": 1201,
         "zoom": 184,
         "customColorsEnabled": true,
