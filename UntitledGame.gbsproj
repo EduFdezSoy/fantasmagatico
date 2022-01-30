@@ -369,20 +369,44 @@
                                                                     "true": [],
                                                                     "false": [
                                                                         {
-                                                                            "command": "EVENT_TEXT",
+                                                                            "command": "EVENT_IF_FALSE",
                                                                             "args": {
-                                                                                "text": [
-                                                                                    "Ay Patuquitos.",
-                                                                                    "Es mi Blanca, mira.",
-                                                                                    "Menos mal que me la\nhas traído.",
-                                                                                    "Ya me ha contado que no\npudo visitarme porque\ntuvo un susto con la\ndiabetes.",
-                                                                                    "También me ha dicho que\nno le pasa nada, vamos,\nque solo fue al hospital\nporque su sobrina se\npreocupa mucho, ay.",
-                                                                                    "No te apures por mí,\nya no lloraré, que estoy\ncon mi Blanca."
-                                                                                ],
-                                                                                "avatarId": "",
-                                                                                "__collapse": true
+                                                                                "variable": "14",
+                                                                                "__collapseElse": false
                                                                             },
-                                                                            "id": "000f4f84-cc7f-4b7f-8846-6b608b86d35c"
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Es mi Blanca, mira."
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        },
+                                                                                        "id": "ae7a9658-4b53-4f21-95de-511ccca11405"
+                                                                                    }
+                                                                                ],
+                                                                                "false": [
+                                                                                    {
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Ay Patuquitos.",
+                                                                                                "Es mi Blanca, mira.",
+                                                                                                "Menos mal que me la\nhas traído.",
+                                                                                                "Ya me ha contado que no\npudo visitarme porque\ntuvo un susto con la\ndiabetes.",
+                                                                                                "También me ha dicho que\nno le pasa nada, vamos,\nque solo fue al hospital\nporque su sobrina se\npreocupa mucho, ay.",
+                                                                                                "No te apures por mí,\nya no lloraré, que estoy\ncon mi Blanca."
+                                                                                            ],
+                                                                                            "avatarId": "",
+                                                                                            "__collapse": false
+                                                                                        },
+                                                                                        "id": "000f4f84-cc7f-4b7f-8846-6b608b86d35c"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "id": "73200c1c-6c76-429a-a819-3c3d3d717389"
                                                                         },
                                                                         {
                                                                             "command": "EVENT_SET_VALUE",
@@ -1287,7 +1311,7 @@
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "13",
-                                "__collapseElse": true
+                                "__collapseElse": false
                             },
                             "children": {
                                 "true": [
@@ -1326,7 +1350,7 @@
                                                     "command": "EVENT_IF_TRUE",
                                                     "args": {
                                                         "variable": "31",
-                                                        "__collapseElse": true
+                                                        "__collapseElse": false
                                                     },
                                                     "children": {
                                                         "true": [
@@ -1488,6 +1512,13 @@
                                                         "avatarId": ""
                                                     },
                                                     "id": "f5963d83-6dfa-4cd1-b953-5ec07f4f73dd"
+                                                },
+                                                {
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "14"
+                                                    },
+                                                    "id": "5fac3880-df9c-47d6-a47e-3bb2507d046c"
                                                 }
                                             ],
                                             "false": []
@@ -78732,7 +78763,7 @@
         },
         {
             "id": "14",
-            "name": "Used Radio"
+            "name": "habla con blanca 2a vez"
         },
         {
             "id": "15",
@@ -78962,8 +78993,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1420,
-        "worldScrollY": 665,
+        "worldScrollX": 1057,
+        "worldScrollY": 1201,
         "zoom": 184,
         "customColorsEnabled": true,
         "sgbEnabled": true,

@@ -17284,7 +17284,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "jeje, poppeo. Ahora no \ntengo que pagar \nimpuestos."
+                                    "Jeje, poppeo. Ahora no \ntengo que pagar \nimpuestos."
                                 ],
                                 "avatarId": ""
                             },
@@ -78962,9 +78962,9 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1420,
-        "worldScrollY": 665,
-        "zoom": 184,
+        "worldScrollX": 2133,
+        "worldScrollY": 920,
+        "zoom": 237,
         "customColorsEnabled": true,
         "sgbEnabled": true,
         "customHead": "",
