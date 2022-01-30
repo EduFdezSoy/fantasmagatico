@@ -658,29 +658,55 @@
                                                     "children": {
                                                         "true": [
                                                             {
-                                                                "command": "EVENT_ACTOR_SET_STATE",
+                                                                "command": "EVENT_IF_VALUE",
                                                                 "args": {
-                                                                    "actorId": "$self$",
-                                                                    "spriteStateId": "feliz"
+                                                                    "variable": "7",
+                                                                    "operator": ">=",
+                                                                    "comparator": 1,
+                                                                    "__collapseElse": false
                                                                 },
-                                                                "id": "a9d8b607-e821-4ae6-bf14-3f925e92e43e"
-                                                            },
-                                                            {
-                                                                "command": "EVENT_TEXT",
-                                                                "args": {
-                                                                    "text": [
-                                                                        "¡Patus! ¡Has venido \ncon Pepo!",
-                                                                        "Y traéis el frisbee,\n¡qué bien!",
-                                                                        "¿Lo tenía Chispa?\nNo sé por qué me \nsorprendo, ¡jajaja!",
-                                                                        "Qué suerte tenéis les \nanimales de poder \nmoveros aunque estéis \nun poco muertes.",
-                                                                        "En fin, bien está lo que\nbien acaba, y yo estoy \nmuy bien con vosotres.",
-                                                                        "No te preocupes por mí,\n Pepo me cuida.",
-                                                                        "Nos vemos, Patutus."
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "command": "EVENT_ACTOR_SET_STATE",
+                                                                            "args": {
+                                                                                "actorId": "$self$",
+                                                                                "spriteStateId": "feliz"
+                                                                            },
+                                                                            "id": "a9d8b607-e821-4ae6-bf14-3f925e92e43e"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "¡Patus! ¡Has venido \ncon Pepo!",
+                                                                                    "Y traéis el frisbee,\n¡qué bien!",
+                                                                                    "¿Lo había escondido \nChispa? No sé por qué\nme sorprendo, ¡jajaja!",
+                                                                                    "Qué suerte tenéis les \nanimales de poder \nmoveros aunque estéis \nun poco muertes.",
+                                                                                    "En fin, bien está lo que\nbien acaba, y yo estoy \nmuy bien con vosotres.",
+                                                                                    "No te preocupes por mí,\n Pepo me cuida.",
+                                                                                    "Nos vemos, Patutus."
+                                                                                ],
+                                                                                "avatarId": "",
+                                                                                "__collapse": false
+                                                                            },
+                                                                            "id": "f041a1bb-f3b7-4901-bfdd-35cedecc8e4d"
+                                                                        }
                                                                     ],
-                                                                    "avatarId": "",
-                                                                    "__collapse": false
+                                                                    "false": [
+                                                                        {
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Echo de menos a\nPepo..."
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            },
+                                                                            "id": "a746ed71-5a90-4cb5-bf0b-06b5e4ebc885"
+                                                                        }
+                                                                    ]
                                                                 },
-                                                                "id": "f041a1bb-f3b7-4901-bfdd-35cedecc8e4d"
+                                                                "id": "de2eb8a5-fced-4c5d-85ff-b7d347326f8c"
                                                             },
                                                             {
                                                                 "command": "EVENT_SET_TRUE",
@@ -741,7 +767,31 @@
                             "id": "c8b37ace-a985-4544-a633-5f7a70c931ae"
                         }
                     ],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "7",
+                                "operator": ">=",
+                                "comparator": 1,
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "spriteStateId": "feliz"
+                                        },
+                                        "id": "a6435382-674a-4e8c-b20d-201bf692c387"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "16e9ebb4-e4ef-45b1-9024-c3faf1757590"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -77928,12 +77978,52 @@
         },
         {
             "id": "cc513c45-191f-4ba3-93da-5d0402277150",
-            "name": "Blacky Calaca",
+            "name": "Calaca Blacky",
             "colors": [
                 "A8E8F8",
                 "0038B0",
-                "F8F8F8",
+                "0038B0",
                 "001030"
+            ]
+        },
+        {
+            "id": "d7b91466-9820-4ded-b70f-13b062d2a9a3",
+            "name": "Calaca Elva",
+            "colors": [
+                "E8C8F0",
+                "301838",
+                "301838",
+                "080010"
+            ]
+        },
+        {
+            "id": "dcf35a76-012a-4530-a5ca-e2ded60e6dcd",
+            "name": "Calaca Binky",
+            "colors": [
+                "F8F8D0",
+                "F8D000",
+                "F8D000",
+                "A8A018"
+            ]
+        },
+        {
+            "id": "05fc8d58-4c6a-4923-bf3b-58155d6e44bf",
+            "name": "Calaca Poli",
+            "colors": [
+                "A8A018",
+                "B0F088",
+                "509878",
+                "202850"
+            ]
+        },
+        {
+            "id": "585787f6-4304-4bee-98b4-1f124bda0779",
+            "name": "Palette 28",
+            "colors": [
+                "E8F8E0",
+                "B0F088",
+                "509878",
+                "202850"
             ]
         }
     ],
@@ -79208,8 +79298,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1101,
-        "worldScrollY": 1728,
+        "worldScrollX": 1504,
+        "worldScrollY": 685,
         "zoom": 184,
         "customColorsEnabled": true,
         "sgbEnabled": true,
