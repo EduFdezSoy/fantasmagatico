@@ -15114,8 +15114,8 @@
                 "dmg"
             ],
             "spritePaletteIds": [
-                null,
-                null,
+                "",
+                "default-sprite",
                 "default-bg-1"
             ],
             "collisions": [
@@ -15952,7 +15952,18 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Jeje, poppeo. Morí \nintentando matar al \nprgramador de GB Studio"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "ceda869c-eaba-4c56-96a3-0b30bfd0aa25"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -15973,7 +15984,18 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Ya no me duelen \nlas manos."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "335c93f8-bed0-4a9f-bc8f-927a33de3274"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -15994,7 +16016,18 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "A quién se le ocurre \nhacer un juego en \ndos días."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "4a0bead1-c577-4f44-8fc0-caf514ffe0e0"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -16015,7 +16048,18 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Cuando tenía pies mis \ncalcetines favoritos \neran unos blancos y \nrojos, pero perdí uno."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "8800d35f-395b-4da2-a657-5989598961c1"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -16036,7 +16080,18 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Toda la vida matando \ntontos y al final ellos \nme mataron a mí."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "77872efc-82b2-4025-a277-5b1e03cca996"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -16057,7 +16112,18 @@
                     "paletteId": "",
                     "isPinned": false,
                     "collisionGroup": "",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "eje, poppeo. Ahora no \ntengo que pagar \nimpuestos."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "1d6eba58-3913-49cb-ab75-5a0205aab4ce"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -16229,7 +16295,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "ola"
+                                    "aqui yace el sueño\n de Edu"
                                 ],
                                 "avatarId": ""
                             },
@@ -48873,7 +48939,8 @@
             "height": 18,
             "imageWidth": 320,
             "imageHeight": 144,
-            "filename": "mausoleo_catacumbas2.png"
+            "filename": "mausoleo_catacumbas2.png",
+            "tileColors": []
         },
         {
             "id": "98c26d49-7e35-4779-8bd1-3cbeda763159",
@@ -48882,7 +48949,8 @@
             "height": 18,
             "imageWidth": 320,
             "imageHeight": 144,
-            "filename": "mausoleo_catacumbas3.png"
+            "filename": "mausoleo_catacumbas3.png",
+            "tileColors": []
         },
         {
             "id": "6ec9c1ba-38ee-4dff-9efc-730e048c8ac3",
@@ -48891,7 +48959,8 @@
             "height": 18,
             "imageWidth": 320,
             "imageHeight": 144,
-            "filename": "mausoleo_catacumbas4.png"
+            "filename": "mausoleo_catacumbas4.png",
+            "tileColors": []
         },
         {
             "id": "b49ea566-b022-478c-979d-ec3ee255fdc5",
@@ -60817,7 +60886,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -60830,7 +60899,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -62804,7 +62873,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -62817,7 +62886,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -76078,6 +76147,13 @@
             "type": "mod"
         },
         {
+            "id": "1d5a0459-7e84-4332-a2e3-96cb9365f111",
+            "name": "perro",
+            "filename": "perro.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
             "id": "7a7772d2-b67e-4802-838f-8d697e272af6",
             "name": "principio",
             "filename": "principio.mod",
@@ -76247,6 +76323,18 @@
             "name": "acompaña a blanca"
         },
         {
+            "id": "17",
+            "name": "piezas foto"
+        },
+        {
+            "id": "18",
+            "name": "flags fotos"
+        },
+        {
+            "id": "19",
+            "name": "ayuda alvaro"
+        },
+        {
             "id": "20",
             "name": "mision felisa"
         },
@@ -76263,8 +76351,16 @@
             "name": "mision alex"
         },
         {
+            "id": "24",
+            "name": "completo"
+        },
+        {
             "id": "30",
             "name": "frisbee"
+        },
+        {
+            "id": "31",
+            "name": "medallon"
         },
         {
             "id": "500",
@@ -76347,10 +76443,6 @@
             "name": "dialogo"
         },
         {
-            "id": "31",
-            "name": "medallon"
-        },
-        {
             "id": "86b6f8fc-9a59-4e2f-a786-839d38e88282__L0",
             "name": "dialogo 2"
         },
@@ -76363,16 +76455,8 @@
             "name": "y"
         },
         {
-            "id": "17",
-            "name": "piezas foto"
-        },
-        {
             "id": "ff62c3d3-4d5d-417c-8663-cb35bcca3d67__L3",
             "name": "dialogo 2"
-        },
-        {
-            "id": "18",
-            "name": "flags fotos"
         },
         {
             "id": "d3393892-25fb-4877-b2f3-60c256fcbed0__L0",
@@ -76405,14 +76489,6 @@
         {
             "id": "1a3d49c0-1425-4a1b-9ab8-7d3733b67fd7__L0",
             "name": "dialogo"
-        },
-        {
-            "id": "24",
-            "name": "completo"
-        },
-        {
-            "id": "19",
-            "name": "ayuda alvaro"
         },
         {
             "id": "3e1e765d-4192-4a01-a508-6340f802fae0__L1",
@@ -76462,8 +76538,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1211,
-        "worldScrollY": 2109,
+        "worldScrollX": 1381,
+        "worldScrollY": 895,
         "zoom": 210.5,
         "customColorsEnabled": true,
         "sgbEnabled": true,
