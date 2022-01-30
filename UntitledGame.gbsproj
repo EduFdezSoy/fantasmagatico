@@ -10236,7 +10236,7 @@
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "5bc68585-cff1-45fc-ad52-8ff1a7665336",
-                    "direction": "right",
+                    "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
                     "paletteId": "",
@@ -19981,7 +19981,7 @@
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "b4e27573-f05f-44b9-98b6-55a1690d2719",
-                    "direction": "right",
+                    "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
                     "paletteId": "",
@@ -20115,7 +20115,7 @@
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "70a58192-e052-4c00-80c8-47da650aad2f",
-                    "direction": "right",
+                    "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
                     "paletteId": "",
@@ -65428,7 +65428,7 @@
                 {
                     "id": "36d638cb-3253-41c7-9467-dd9468719019",
                     "name": "",
-                    "animationType": "multi_movement",
+                    "animationType": "fixed",
                     "flipLeft": true,
                     "animations": [
                         {
@@ -76538,8 +76538,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1381,
-        "worldScrollY": 895,
+        "worldScrollX": 215,
+        "worldScrollY": 1208,
         "zoom": 210.5,
         "customColorsEnabled": true,
         "sgbEnabled": true,
@@ -76568,9 +76568,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            205,
+            204,
             175,
-            557
+            558
         ],
         "showNavigator": true,
         "defaultFontId": "948c169c-8e4b-491c-a5f0-66898bbf45d9",
