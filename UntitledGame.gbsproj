@@ -1110,7 +1110,7 @@
                     "y": 33
                 },
                 {
-                    "name": "",
+                    "name": "pepo",
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "9f5d442a-c0cc-4be8-bf3c-8d537ebb3295",
@@ -1130,11 +1130,9 @@
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_IF_VALUE",
+                                        "command": "EVENT_IF_FALSE",
                                         "args": {
                                             "variable": "L0",
-                                            "operator": "==",
-                                            "comparator": 0,
                                             "__collapseElse": false
                                         },
                                         "children": {
@@ -1156,11 +1154,11 @@
                                                     "id": "aa232234-dbb7-489b-bc9f-c20e942034d6"
                                                 },
                                                 {
-                                                    "command": "EVENT_INC_VALUE",
+                                                    "command": "EVENT_SET_TRUE",
                                                     "args": {
                                                         "variable": "L0"
                                                     },
-                                                    "id": "1b797ca5-5288-4d13-ad0b-4ecf829475b5"
+                                                    "id": "6bb1739c-e8b3-493c-a9a9-06e4ee8f47de"
                                                 }
                                             ],
                                             "false": [
@@ -1176,7 +1174,7 @@
                                                 }
                                             ]
                                         },
-                                        "id": "f626a3f1-e30e-4dbb-9106-ac5531b4310f"
+                                        "id": "f72864f3-cbf4-484f-8bea-cf1491b35685"
                                     },
                                     {
                                         "command": "EVENT_IF_TRUE",
@@ -78964,8 +78962,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1967,
-        "worldScrollY": 2012,
+        "worldScrollX": 1921,
+        "worldScrollY": 2168,
         "zoom": 290,
         "customColorsEnabled": true,
         "sgbEnabled": true,
