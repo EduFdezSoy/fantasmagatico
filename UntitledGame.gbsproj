@@ -19608,7 +19608,7 @@
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "3d0ce8c4-a358-41da-9e9f-0abe2686771c",
-                    "direction": "left",
+                    "direction": "right",
                     "moveSpeed": 1,
                     "animSpeed": 255,
                     "paletteId": "",
@@ -19629,7 +19629,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "28451caa-9a35-4c06-81ed-223a5da4a1be",
-                    "x": 4,
+                    "x": 2,
                     "y": 14
                 },
                 {
@@ -19637,7 +19637,7 @@
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "3d0ce8c4-a358-41da-9e9f-0abe2686771c",
-                    "direction": "right",
+                    "direction": "left",
                     "moveSpeed": 1,
                     "animSpeed": 255,
                     "paletteId": "",
@@ -19658,7 +19658,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "e0bb5a76-da31-431d-badf-2ebd52a7e04a",
-                    "x": 5,
+                    "x": 1,
                     "y": 13
                 },
                 {
@@ -78964,8 +78964,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 693,
-        "worldScrollY": 1875,
+        "worldScrollX": 1688,
+        "worldScrollY": 3184,
         "zoom": 290,
         "customColorsEnabled": true,
         "sgbEnabled": true,

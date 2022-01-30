@@ -22497,7 +22497,8 @@
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
                         "musicId": "9bdad4f0-8a07-470b-bfe0-d7a163fd6fe9",
-                        "loop": true
+                        "loop": true,
+                        "__comment": true
                     }
                 },
                 {
@@ -23074,7 +23075,8 @@
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
                         "musicId": "9bdad4f0-8a07-470b-bfe0-d7a163fd6fe9",
-                        "loop": true
+                        "loop": true,
+                        "__comment": true
                     }
                 },
                 {
@@ -78963,7 +78965,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 693,
-        "worldScrollY": 2087,
+        "worldScrollY": 1875,
         "zoom": 290,
         "customColorsEnabled": true,
         "sgbEnabled": true,
