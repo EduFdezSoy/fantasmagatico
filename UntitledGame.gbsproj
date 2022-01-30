@@ -307,7 +307,7 @@
                                         "command": "EVENT_IF_FALSE",
                                         "args": {
                                             "variable": "2",
-                                            "__collapseElse": true
+                                            "__collapseElse": false
                                         },
                                         "children": {
                                             "true": [
@@ -323,9 +323,10 @@
                                                             "Ya sé que no soy más\nque los huesos de una\nanciana, y por eso nadie\nse acuerda de mí.",
                                                             "Pero me gustaría tanto \nvolver a...",
                                                             "Ayy...",
-                                                            "Toma Patucos.",
-                                                            "Es mejor que te lleves \nesto, no hace más que\nrecordarme tiempos\ndemasiado buenos...",
-                                                            "Ay..."
+                                                            "Y además perdí el\nmedallón que me dio...",
+                                                            "Seguro que se enfada\nconmigo.",
+                                                            "Eso si vuelve a verme.",
+                                                            "Aayyy... ay..."
                                                         ],
                                                         "avatarId": ""
                                                     },
@@ -335,14 +336,43 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Has recibido"
+                                                            "Encuentra el medallón\nde Emilia."
                                                         ],
                                                         "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516"
                                                     },
                                                     "id": "89b61065-7c7e-4694-9cd6-b258064dd82d"
+                                                },
+                                                {
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "8",
+                                                        "value": {
+                                                            "type": "number",
+                                                            "value": 1
+                                                        }
+                                                    },
+                                                    "id": "f0e7273c-7a2c-49b3-8c1a-02f052cd6cfd"
+                                                },
+                                                {
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "2"
+                                                    },
+                                                    "id": "07ee38f0-74d2-411a-ad77-3f6cb629427f"
                                                 }
                                             ],
-                                            "false": []
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "El medallón...\nAayyy... ay..."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "baa2acac-558f-4557-8f4d-f9f90f0df052"
+                                                }
+                                            ]
                                         },
                                         "id": "d02d060a-a3f0-4d9b-be31-16a8218ced04"
                                     }
@@ -62741,6 +62771,13 @@
             "type": "mod"
         },
         {
+            "id": "933ff454-2277-4c78-9c13-1da24b392668",
+            "name": "cementeriomuerto",
+            "filename": "cementeriomuerto.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
             "id": "9bdad4f0-8a07-470b-bfe0-d7a163fd6fe9",
             "name": "cementeriovivo",
             "filename": "cementeriovivo.mod",
@@ -62924,7 +62961,7 @@
         },
         {
             "id": "8",
-            "name": "Quest9"
+            "name": "encuentra el medallon"
         },
         {
             "id": "9",
@@ -63082,8 +63119,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 879,
-        "worldScrollY": 1680,
+        "worldScrollX": 924,
+        "worldScrollY": 1554,
         "zoom": 237,
         "customColorsEnabled": true,
         "sgbEnabled": true,
