@@ -1,3 +1,5 @@
+![banner_image](https://backpain.fun/images/fantasmagatico-video-2.png)
+
 # Fantasmagático
 This is a game made for the Global Game Jam 2022, you can play in our website [backpain.fun](https://backpain.fun/).
 
